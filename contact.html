@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <header class="page_normal">
+        <div class="header__flex">
+            <div class="header__logo">
+                <img src="/img/logo.svg" alt="">
+                <p>Завод качественной тротуарной плитки «Строй Камень»</p>
+            </div>
+            <div class="block_header">
+                <div class="block_header__top fl-align">
+                    <a href="">
+                        <img src="/img/adress.png" alt=""> Где купить?</a>
+                    <a href="tel:+73412771795"><img src="/img/phone.png" alt="">77-17-95</a>
+                    <div class="block_header__btn">
+                        <button data-zvonok>Заказать звонок</button>
+                        <button data-price>Скачать прайс</button>
+                    </div>
+                </div>
+                <div class="block_header__mobMenu">
+                    <div id="menu-toggle">
+                        <div id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div id="cross">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="tel:+73412771795">
+                            <img src="/img/phone-call.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <img src="/img/mail.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/img/search.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/img/cart.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/img/adress-white.png" alt="">
+                    </div>
+                </div>
+                <img src="/img/logo.svg" class="block_header__mobLogo" alt="">
+                <div class="block_header__menu">
+                    <img src="/img/logo.svg" class="block_header__menu--img" alt="">
+                    <ul class="fl-align">
+                        <li>Главная</li>
+                        <li>Каталог</li>
+                        <li>Акции</li>
+                        <li>Где купить</li>
+                        <li>Новости</li>
+                        <li>Контакты</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="section_contact">
+        <div class="container">
+            <h1 class="h2_background"><span>Контакты</span></h1>
+            <div class="tabs">
+                <input type="radio" id="radio-1" name="tabs" checked />
+                <label class="tab" for="radio-1">Контакты</label>
+                <input type="radio" id="radio-2" name="tabs" />
+                <label class="tab" for="radio-2">Отдел продаж<span class="notification">9</span></label>
+                <input type="radio" id="radio-3" name="tabs" />
+                <label class="tab" for="radio-3">Офисы продаж<span class="notification">3</span></label>
+                <input type="radio" id="radio-4" name="tabs" />
+                <label class="tab" for="radio-4">Производство</label>
+                <span class="glider"></span>
+            </div>
+        </div>
+        <div class="tabs_box">
+            <div class="tabs_box__element">
+                <div class="tabs_box__element--map" id="tabs_box__element--map" style="width:100%;height:600px">
+                    <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afeb0756fa23d3a5e12f8786de15d771638cdc09674ab8fbc4e3b6aba21beae7a&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script> -->
+                </div>
+                <div class="tabs_box__element--block active" data-block="contact">
+                    <div class="container">
+                        <div class="tabs_box__element--form">
+                            <h2>Связаться с нами</h2>
+                            <form action="">
+                                <div class="input-container ic1">
+                                    <input id="firstname" class="input" type="text" placeholder=" " />
+                                    <div class="cut"></div>
+                                    <label for="firstname" class="placeholder">Ваше имя</label>
+                                </div>
+                                <div class="input-container ic2">
+                                    <input id="lastname" class="input" type="text" placeholder=" " />
+                                    <div class="cut"></div>
+                                    <label for="lastname" class="placeholder">Ваше номер телефона</label>
+                                </div>
+                                <div class="input-container ic3">
+                                    <input id="lastname" class="input" type="text" placeholder=" " />
+                                    <div class="cut"></div>
+                                    <label for="lastname" class="placeholder">Комментарий</label>
+                                </div>
+
+                                <input type="submit" value="Оставить заявку">
+                            </form>
+                        </div>
+                        <div class="tabs_box__element--contacts">
+                            <div class="tabs_box__element--item tabs_box__element--oveeflow">
+                                <div class="tabs_box__element--img">
+                                    <img src="/img/adress-white.png" alt="">
+                                </div>
+                                <ul>
+                                    <li>Офисы продаж</li>
+                                    <li>г. Ижевск, ул. О. Кошевого, 2 <span data-street="г. Ижевск, ул. О. Кошевого, 2">Найти на карте</span> </li>
+                                    <li>г. Ижевск, Воткинское шоссе, 31<span data-street="г. Ижевск, Воткинское шоссе, 31">Найти на карте</span></li>
+                                    <li>г. Ижевск, ул. Молодежная, 107Б<span data-street="г. Ижевск, ул. Молодежная, 107Б">Найти на карте</span></li>
+                                    <li>п. Чур, Заводской проезд, 1<span data-street="п. Чур, Заводской проезд, 1">Найти на карте</span></li>
+                                </ul>
+                                <p class="all_label">Показать все адреса</p>
+                            </div>
+                            <div class="tabs_box__element--item">
+                                <div class="tabs_box__element--img">
+                                    <img src="/img/phone-call.png" alt="">
+                                </div>
+                                <ul>
+                                    <li>Справочная служба</li>
+                                    <li><a href="tel:+73412771795">77-17-95</a></li>
+                                </ul>
+                            </div>
+                            <div class="tabs_box__element--item">
+                                <div class="tabs_box__element--img">
+                                    <img src="/img/mail.png" alt="">
+                                </div>
+                                <ul>
+                                    <li>E-mail</li>
+                                    <li><a href="mailto:zavod_ecoblock@mail.ru">zavod_ecoblock@mail.ru</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs_box__element--block" data-block="otdel">
+                    <div class="container">
+                        <div class="tabs_box__element--ppl">
+                            <p class="ppl-title">Богатырев Данил Александрович</p>
+                            <p class="ppl-dolzh">Руководитель розничного отдела(физ.лица)</p>
+                            <a class="ppl-mail" href="mailto:bda@izkm.ru">bda@izkm.ru</a>
+                            <a class="ppl-phone" href="tel:+79226896265">+7(922)689-62-65</a>
+                            <div class="tabs_box__element--photo">
+                                <img src="/img/user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tabs_box__element--ppl">
+                            <p class="ppl-title">Богатырев Данил Александрович</p>
+                            <p class="ppl-dolzh">Руководитель розничного отдела(физ.лица)</p>
+                            <a class="ppl-mail" href="mailto:bda@izkm.ru">bda@izkm.ru</a>
+                            <a class="ppl-phone" href="tel:+79226896265">+7(922)689-62-65</a>
+                            <div class="tabs_box__element--photo">
+                                <img src="/img/user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tabs_box__element--ppl">
+                            <p class="ppl-title">Богатырев Данил Александрович</p>
+                            <p class="ppl-dolzh">Руководитель розничного отдела(физ.лица)</p>
+                            <a class="ppl-mail" href="mailto:bda@izkm.ru">bda@izkm.ru</a>
+                            <a class="ppl-phone" href="tel:+79226896265">+7(922)689-62-65</a>
+                            <div class="tabs_box__element--photo">
+                                <img src="/img/user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tabs_box__element--ppl">
+                            <p class="ppl-title">Богатырев Данил Александрович</p>
+                            <p class="ppl-dolzh">Руководитель розничного отдела(физ.лица)</p>
+                            <a class="ppl-mail" href="mailto:bda@izkm.ru">bda@izkm.ru</a>
+                            <a class="ppl-phone" href="tel:+79226896265">+7(922)689-62-65</a>
+                            <div class="tabs_box__element--photo">
+                                <img src="/img/user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tabs_box__element--ppl">
+                            <p class="ppl-title">Богатырев Данил Александрович</p>
+                            <p class="ppl-dolzh">Руководитель розничного отдела(физ.лица)</p>
+                            <a class="ppl-mail" href="mailto:bda@izkm.ru">bda@izkm.ru</a>
+                            <a class="ppl-phone" href="tel:+79226896265">+7(922)689-62-65</a>
+                            <div class="tabs_box__element--photo">
+                                <img src="/img/user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tabs_box__element--ppl">
+                            <p class="ppl-title">Богатырев Данил Александрович</p>
+                            <p class="ppl-dolzh">Руководитель розничного отдела(физ.лица)</p>
+                            <a class="ppl-mail" href="mailto:bda@izkm.ru">bda@izkm.ru</a>
+                            <a class="ppl-phone" href="tel:+79226896265">+7(922)689-62-65</a>
+                            <div class="tabs_box__element--photo">
+                                <img src="/img/user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tabs_box__element--ppl">
+                            <p class="ppl-title">Богатырев Данил Александрович</p>
+                            <p class="ppl-dolzh">Руководитель розничного отдела(физ.лица)</p>
+                            <a class="ppl-mail" href="mailto:bda@izkm.ru">bda@izkm.ru</a>
+                            <a class="ppl-phone" href="tel:+79226896265">+7(922)689-62-65</a>
+                            <div class="tabs_box__element--photo">
+                                <img src="/img/user.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tabs_box__element--ppl">
+                            <p class="ppl-title">Богатырев Данил Александрович</p>
+                            <p class="ppl-dolzh">Руководитель розничного отдела(физ.лица)</p>
+                            <a class="ppl-mail" href="mailto:bda@izkm.ru">bda@izkm.ru</a>
+                            <a class="ppl-phone" href="tel:+79226896265">+7(922)689-62-65</a>
+                            <div class="tabs_box__element--photo">
+                                <img src="/img/user.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs_box__element--block" data-block="ofis">
+                    <div class="container">
+                        <div class="tabs_box__element--ofs">
+                            <img src="https://www.stroykamen.ru/upload/iblock/f9e/logo.png" alt="">
+                            <div class="tabs_box__element--ofsBox">
+                                <p class="ofs-title">Офис продаж Ижевского завода керамических материалов</p>
+                                <p class="ofs-rezhim">
+                                    понедельник–пятница : с 8.00 до 17.00 суббота/воскресенье : выходной Без обеда.
+                                </p>
+                                <a class="ofs-phone" href="tel:+73412771795">+7 (3412) 77-17-95</a>
+                            </div>
+                        </div>
+                        <div class="tabs_box__element--ofs">
+                            <img src="https://www.stroykamen.ru/upload/iblock/adf/1438181133.jpg" alt="">
+                            <div class="tabs_box__element--ofsBox">
+                                <p class="ofs-title">ТЦ «АЗБУКА РЕМОНТА» офис 120А</p>
+                                <p class="ofs-rezhim">
+                                    понедельник–суббота с 9.00 до 20.00 вск с 10.00 до 19.00 Без обеда.
+                                </p>
+                                <a class="ofs-phone" href="tel:+79226903240">+7 (922) 690-32-40</a>
+                            </div>
+                        </div>
+                        <div class="tabs_box__element--ofs">
+                            <img src="https://www.stroykamen.ru/upload/iblock/6ea/alt_logo.png" alt="">
+                            <div class="tabs_box__element--ofsBox">
+                                <p class="ofs-title">Офис продаж завода керамических материалов "Альтаир"</p>
+                                <p class="ofs-rezhim">
+                                    понедельник–пятница с 8.00 до 17.00 Без обеда.
+                                </p>
+                                <a class="ofs-phone" href="tel:+73412998700">+7 (3412) 99-87-00 </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs_box__element--block" data-block="proizvodstvo">
+                    <div class="container">
+                        <div class="tabs_box__element--ofs">
+                            <img src="https://www.stroykamen.ru/upload/iblock/65a/stroykamen_logo2.png" alt="">
+                            <div class="tabs_box__element--ofsBox">
+                                <p class="ofs-title">Завод «СтройКамень»</p>
+                                <p class="ofs-rezhim">
+                                    понедельник–пятница 8.00–17.00
+
+                                </p>
+                                <img src="https://www.stroykamen.ru/upload/medialibrary/eef/map3.jpg" alt="">
+                                <a class="ofs-mail" href="mailto:zavod_ecoblock@mail.ru">zavod_ecoblock@mail.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer__logo">
+                <img src="/img/logo.svg" alt="">
+            </div>
+            <div class="footer__adress">
+                <div class="footer__adress--box footer__adress--phone fl-align">
+                    <img src="/img/phone-call.png" alt="">
+                    <a href="tel:+73412771795">77-17-95</a>
+                </div>
+                <button data-zvonok>Обратный звонок</button>
+                <div class="footer__adress--box fl-align">
+                    <img src="/img/mail.png" alt="">
+                    <a href="mailto:zavod_ecoblock@mail.ru">zavod_ecoblock@mail.ru</a>
+                </div>
+                <div class="footer__adress--box">
+                    <img src="/img/adress-white.png" alt="">
+                    <p>г. Ижевск, ул. Олега Кошевого, 2</p>
+                </div>
+            </div>
+            <div class="footer__menu">
+                <ul>
+                    <li class="footer__title">О компании</li>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Гарантия</a></li>
+                    <li><a href="">Реквизиты</a></li>
+                    <li><a href="">Вакансии</a></li>
+                </ul>
+                <ul>
+                    <li class="footer__title">Продукция</li>
+                    <li><a href="">Тротуарная плитка и брусчатка</a></li>
+                    <li><a href="">Стеновые блоки</a></li>
+                    <li><a href="">Декоративные камни</a></li>
+                    <li><a href="">Бордюры</a></li>
+                    <li><a href="">Вентиляционные блоки</a></li>
+                    <li><a href="">Ограничитель парковки</a></li>
+                    <li><a href="">Укладка брусчатки</a></li>
+                </ul>
+                <ul>
+                    <li class="footer__title">Покупателем</li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Вопрос-ответ</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Статьи</a></li>
+                    <li><a href="">Благоустройство,укладка брусчатки</a></li>
+                </ul>
+
+            </div>
+            <div class="footer__vidget">
+                <div class="footer__vidget--mess">
+                    <p>Мы в соцсетях</p>
+                    <ul>
+                        <li>
+                            <img src="/img/vk.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/img/instagram.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <a href="">Обратная связь</a>
+                <a href="">Письмо директору</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=9f2c8c4d-5788-4c89-8b3e-49139b3f1988&lang=ru_RU" type="text/javascript"></script>
+    <script>
+        document.querySelectorAll('.tabs .tab').forEach((i, ind) => {
+            i.addEventListener('click', (e) => {
+                document.querySelectorAll('.tabs_box__element--block').forEach((el, index) => {
+                    el.classList.remove('active')
+                    if (ind === index) {
+                        el.classList.add('active')
+                    }
+                    if (ind === 0) {
+                        document.querySelector('.tabs_box__element--map').style.display = 'block'
+                    } else {
+                        document.querySelector('.tabs_box__element--map').style.display = 'none'
+                    }
+                });
+            });
+        });
+
+
+
+        ymaps.ready(init);
+
+        function init() {
+            // Создание карты.
+            var myMap = new ymaps.Map("tabs_box__element--map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [56.8497600, 53.20448],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 10
+            });
+
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                ),
+
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    hintContent: 'Собственный значок метки',
+                    balloonContent: 'Это красивая метка'
+                }, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: 'img/home.png',
+                    // Размеры метки.
+                    iconImageSize: [50, 50],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-5, -38]
+                }),
+
+
+
+                myMap.geoObjects
+                .add(myPlacemark);
+
+            function adress_out(adress, zoom) {
+                myMap.destroy();
+                myMap = new ymaps.Map("tabs_box__element--map", {
+                    // Координаты центра карты.
+                    // Порядок по умолчанию: «широта, долгота».
+                    // Чтобы не определять координаты центра карты вручную,
+                    // воспользуйтесь инструментом Определение координат.
+                    center: [56.8497600, 53.20448],
+                    // Уровень масштабирования. Допустимые значения:
+                    // от 0 (весь мир) до 19.
+                    zoom: 10
+                });
+
+                MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                );
+
+
+
+
+                MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                    ),
+
+                    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                        hintContent: 'Собственный значок метки',
+                        balloonContent: 'Это красивая метка'
+                    }, {
+                        // Опции.
+                        // Необходимо указать данный тип макета.
+                        iconLayout: 'default#image',
+                        // Своё изображение иконки метки.
+                        iconImageHref: 'img/home.png',
+                        // Размеры метки.
+                        iconImageSize: [50, 50],
+                        // Смещение левого верхнего угла иконки относительно
+                        // её "ножки" (точки привязки).
+                        iconImageOffset: [-5, -38]
+                    });
+                ymaps.geocode(adress, {
+                    /**
+                     * Опции запроса
+                     * @see https://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/geocode.xml
+                     */
+                    // Сортировка результатов от центра окна карты.
+                    // boundedBy: myMap.getBounds(),
+                    // strictBounds: true,
+                    // Вместе с опцией boundedBy будет искать строго внутри области, указанной в boundedBy.
+                    // Если нужен только один результат, экономим трафик пользователей.
+                    results: 1
+                }).then(function(res) {
+                    let firstGeoObject = res.geoObjects.get(0),
+                        // Координаты геообъекта.
+                        coords = firstGeoObject.geometry.getCoordinates(),
+                        // Область видимости геообъекта.
+                        bounds = firstGeoObject.properties.get('boundedBy');
+
+
+
+                    // firstGeoObject.options.set('preset', 'islands#darkBlueDotIconWithCaption');
+                    // Получаем строку с адресом и выводим в иконке геообъекта.
+                    firstGeoObject.properties.set('iconCaption', firstGeoObject.getAddressLine());
+
+                    firstGeoObject.options.set('iconLayout', 'default#image');
+                    firstGeoObject.options.set('iconImageHref', 'img/home.png');
+                    firstGeoObject.options.set('iconImageSize', [50, 50]);
+                    //firstGeoObject.options.set('iconImageSize', [50, 50]);
+
+
+
+
+                    myMap.geoObjects.add(firstGeoObject);
+                    // Масштабируем карту на область видимости геообъекта.
+                    myMap.setCenter(coords, zoom, {
+                        // Проверяем наличие тайлов на данном масштабе.
+                        checkZoomRange: true
+                    });
+                });
+            }
+
+            let flag = false;
+
+            document.querySelector('.all_label').addEventListener('click', (e) => {
+                document.querySelectorAll('.tabs_box__element--item li span').forEach((i) => {
+                    adress_out(i.dataset.street, 9);
+                })
+                flag = false;
+                document.querySelector('.all_label').classList.remove('active');
+            });
+
+            document.querySelectorAll('.tabs_box__element--item li span').forEach((i) => {
+                adress_out(i.dataset.street, 9);
+                i.addEventListener('click', (e) => {
+                    if (!flag) {
+                        flag = true;
+                        document.querySelector('.all_label').classList.add('active');
+                    }
+                    adress_out(i.dataset.street, 15);
+                });
+            });
+        }
+
+
+
+        document.querySelector('#menu-toggle').addEventListener('click', function(e) {
+            if (!this.classList.contains('open')) {
+                this.classList.add('open');
+                this.closest('header').classList.add('open_header');
+                e.target.closest('.block_header').querySelector('.block_header__menu').style.height = 'auto';
+                let height = e.target.closest('.block_header').querySelector('.block_header__menu').offsetHeight;
+                let height_img = e.target.closest('.block_header').querySelector('.block_header__mobMenu').offsetHeight;
+                e.target.closest('.block_header').querySelector('.block_header__menu').style = null;
+                let sum_height = (e.target.closest('.block_header').offsetHeight / 2) + height;
+                e.target.closest('header').style.height = sum_height + 'px';
+                e.target.closest('.block_header').style.height = sum_height + 'px';
+            } else {
+                this.classList.remove('open');
+                this.closest('header').classList.remove('open_header');
+                e.target.closest('.block_header').style.height = null;
+                e.target.closest('header').style = null;
+            }
+        });
+        document.querySelector('.btn-6').addEventListener('mouseenter', function(e) {
+            let relX = e.layerX,
+                relY = e.layerY;
+            this.querySelector('span').style.cssText = `
+                top: ${relY}px;
+                left: ${relX}px;
+            `;
+        });
+    </script>
+</body>
+
+</html>
