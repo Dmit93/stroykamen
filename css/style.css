@@ -8,8 +8,14 @@
 
 :root {
   --color-green: #45A338;
-  --color-black: #424F60
-;
+  --color-black: #424F60;
+  --primary-color: #185ee0;
+  --secondary-color: #e6eef9;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
 }
 
 body {
@@ -406,7 +412,8 @@ header.header_overflow {
   position: relative;
 }
 
-.section_info__slider .swiper {
+.section_info__slider .swiper,
+.section_info__slider .section_info__absolute {
   position: absolute;
   width: 100%;
   height: calc(100% + 135px);
@@ -1460,6 +1467,441 @@ figure.photo_album_box.hover figcaption {
   transition-delay: 0.2s;
 }
 
+.page_normal .header__logo p {
+  color: #000;
+}
+
+.section_contact h1 {
+  text-align: center;
+  margin: 80px 0 56px 0;
+  font-size: 40px;
+}
+
+.section_contact .tabs {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+  padding: 0.75rem;
+  margin: 100px auto;
+  width: max-content;
+  border-radius: 99px;
+}
+
+.section_contact .tabs * {
+  z-index: 2;
+}
+
+.section_contact .tabs_box__element--block[data-block="contact"] .container {
+  display: flex;
+  transform: translateY(-165px);
+  background: #fff;
+  box-shadow: -20px 20px 0 -17px #eee, 20px -20px 0 -17px #eee, 20px 20px 0 -20px var(--color-green), 0 0 0 2px var(--color-green);
+}
+
+.section_contact .tabs_box__element--block[data-block="otdel"] .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+.section_contact .tabs_box__element--block[data-block="otdel"] .container .tabs_box__element--ppl {
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.section_contact .tabs_box__element--block[data-block="otdel"] .container .tabs_box__element--ppl p,
+.section_contact .tabs_box__element--block[data-block="otdel"] .container .tabs_box__element--ppl a:not(:last-child) {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.section_contact .tabs_box__element--block[data-block="otdel"] .container .tabs_box__element--ppl a {
+  color: #000;
+}
+
+.section_contact .tabs_box__element--block[data-block="otdel"] .container .ppl-title {
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+.section_contact .tabs_box__element--block[data-block="otdel"] .container .tabs_box__element--photo {
+  width: 90px;
+  height: 90px;
+  background: var(--color-black);
+  position: absolute;
+  bottom: -12px;
+  right: -18px;
+  padding: 20px;
+}
+
+.section_contact .tabs_box__element--block[data-block="otdel"] .container .tabs_box__element--photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+.section_contact .tabs_box__element--block[data-block="ofis"] .container,
+.section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.section_contact .tabs_box__element--block[data-block="ofis"] .container .tabs_box__element--ofs,
+.section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container .tabs_box__element--ofs {
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+.section_contact .tabs_box__element--block[data-block="ofis"] .container .tabs_box__element--ofs img,
+.section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container .tabs_box__element--ofs img {
+  width: 100px;
+}
+
+.section_contact .tabs_box__element--block[data-block="ofis"] .container .tabs_box__element--ofsBox,
+.section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container .tabs_box__element--ofsBox {
+  margin-left: 10px;
+}
+
+.section_contact .tabs_box__element--block[data-block="ofis"] .container .tabs_box__element--ofsBox .ofs-title,
+.section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container .tabs_box__element--ofsBox .ofs-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.section_contact .tabs_box__element--block[data-block="ofis"] .container .tabs_box__element--ofsBox .ofs-rezhim,
+.section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container .tabs_box__element--ofsBox .ofs-rezhim {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.section_contact .tabs_box__element--block[data-block="ofis"] .container .tabs_box__element--ofsBox .ofs-phone,
+.section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container .tabs_box__element--ofsBox .ofs-phone {
+  font-size: 14px;
+  color: var(--color-green);
+}
+
+.section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container .tabs_box__element--ofs {
+  margin: auto;
+  justify-content: center;
+  padding: 46px;
+}
+
+.section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container .tabs_box__element--ofsBox {
+  margin-left: 50px;
+}
+
+.section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container .tabs_box__element--ofsBox img {
+  width: 400px;
+  max-width: 100%;
+}
+
+.section_contact .tabs_box__element {
+  margin-bottom: 50px;
+}
+
+.section_contact .tabs_box__element--block {
+  position: relative;
+  display: none;
+  justify-content: center;
+}
+
+.section_contact .tabs_box__element--block.active {
+  display: flex;
+}
+
+.section_contact .tabs_box__element--form {
+  width: 50%;
+  padding: 45px;
+}
+
+.section_contact .tabs_box__element--form h2 {
+  margin-bottom: 30px;
+}
+
+.section_contact .tabs_box__element--form form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.section_contact .tabs_box__element--form form input[type="text"] {
+  padding: 13px;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  font-size: 17px;
+  color: #6c6c6c;
+}
+
+.section_contact .tabs_box__element--form form input[type="submit"] {
+  background: var(--color-green);
+  color: #fff;
+  border: none;
+  padding: 16px 0;
+}
+
+.section_contact .tabs_box__element--form .input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.section_contact .tabs_box__element--form .input {
+  border-radius: 12px;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.section_contact .tabs_box__element--form .cut {
+  opacity: 0;
+  background: var(--color-green);
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.section_contact .tabs_box__element--form .ic2 .cut {
+  width: 146px;
+}
+
+.section_contact .tabs_box__element--form .ic3 .cut {
+  width: 94px;
+}
+
+.section_contact .tabs_box__element--form div.ic3 {
+  height: 100%;
+}
+
+.section_contact .tabs_box__element--form div.ic3 input {
+  padding-bottom: 90px;
+}
+
+.section_contact .tabs_box__element--form .input:focus ~ .cut,
+.section_contact .tabs_box__element--form .input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+  opacity: 1;
+}
+
+.section_contact .tabs_box__element--form .placeholder {
+  color: #65657b;
+  font-size: 14px;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.section_contact .tabs_box__element--form .input:focus ~ .placeholder,
+.section_contact .tabs_box__element--form .input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.section_contact .tabs_box__element--form .input:not(:placeholder-shown) ~ .placeholder {
+  color: #fff;
+}
+
+.section_contact .tabs_box__element--form .input:focus ~ .placeholder {
+  color: #dcdcdc;
+}
+
+.section_contact .tabs_box__element--contacts {
+  width: 50%;
+  background: var(--color-black);
+  padding: 31px;
+}
+
+.section_contact .tabs_box__element--contacts .tabs_box__element--item {
+  margin-bottom: 35px;
+  box-shadow: inset 2px 2px 5px var(--color-black), 1px 1px 5px black;
+  color: #fff;
+  padding: 17px;
+  display: flex;
+  position: relative;
+}
+
+.section_contact .tabs_box__element--contacts .tabs_box__element--item img {
+  width: 20px;
+}
+
+.section_contact .tabs_box__element--contacts .tabs_box__element--item .all_label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--color-green);
+  padding: 14px;
+  width: 100px;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  transform: translateY(-105%);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.section_contact .tabs_box__element--contacts .tabs_box__element--item .all_label.active {
+  transform: translateY(0);
+}
+
+.section_contact .tabs_box__element--contacts .tabs_box__element--oveeflow {
+  overflow: hidden;
+}
+
+.section_contact .tabs_box__element--contacts ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.section_contact .tabs_box__element--contacts ul li:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 11px;
+}
+
+.section_contact .tabs_box__element--contacts ul li:not(:first-child) {
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.section_contact .tabs_box__element--contacts ul li:not(:first-child):hover span {
+  display: flex;
+}
+
+.section_contact .tabs_box__element--contacts ul li:not(:first-child) span {
+  position: absolute;
+  left: 0;
+  right: -155%;
+  margin: auto;
+  top: -10px;
+  display: none;
+  justify-content: center;
+  background: var(--color-green);
+  width: max-content;
+  padding: 9px;
+  font-size: 14px;
+}
+
+.section_contact .tabs_box__element--contacts ul li:not(:first-child) span:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: -60%;
+}
+
+.section_contact .tabs_box__element--contacts ul li:not(:first-child) span:after {
+  content: '';
+  position: absolute;
+  bottom: 11px;
+  left: -4px;
+  border: 5px solid transparent;
+  border-bottom: 5px solid var(--color-green);
+  border-right: 5px solid var(--color-green);
+  z-index: 999;
+  transform: rotate(132deg);
+}
+
+.section_contact .tabs_box__element--contacts ul a {
+  color: #fff;
+}
+
+.section_contact input[type="radio"] {
+  display: none;
+}
+
+.section_contact .tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  width: 225px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+}
+
+.section_contact .notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.75rem;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  transition: 0.15s ease-in;
+}
+
+.section_contact input[type="radio"]:checked + label {
+  color: #fff;
+}
+
+.section_contact input[type="radio"]:checked + label > .notification {
+  background-color: var(--color-green);
+  color: #fff;
+}
+
+.section_contact input[id="radio-1"]:checked ~ .glider {
+  transform: translateX(0);
+}
+
+.section_contact input[id="radio-2"]:checked ~ .glider {
+  transform: translateX(100%);
+}
+
+.section_contact input[id="radio-3"]:checked ~ .glider {
+  transform: translateX(200%);
+}
+
+.section_contact input[id="radio-4"]:checked ~ .glider {
+  transform: translateX(300%);
+}
+
+.section_contact .glider {
+  position: absolute;
+  display: flex;
+  height: 54px;
+  width: 225px;
+  background-color: var(--color-black);
+  z-index: 1;
+  border-radius: 99px;
+  transition: 0.25s ease-out;
+}
+
+@media (max-width: 700px) {
+  .section_contact .tabs {
+    transform: scale(0.6);
+  }
+}
+
 @media (max-width: 500px) {
   h2.h2_background {
     font-size: 8vw;
@@ -1476,13 +1918,6 @@ figure.photo_album_box.hover figcaption {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf");
-  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Montserrat";
   src: url("../fonts/Montserrat-ExtraLight.ttf");
   src: url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
   font-weight: 300;
@@ -1493,6 +1928,13 @@ figure.photo_album_box.hover figcaption {
   src: url("../fonts/Montserrat-Light.ttf");
   src: url("../fonts/Montserrat-Light.ttf") format("truetype");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 500;
 }
 
 @font-face {
