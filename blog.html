@@ -62,7 +62,13 @@
                     <img src="img/logo.svg" class="block_header__menu--img" alt="">
                     <ul class="fl-align">
                         <li>Главная</li>
-                        <li>Каталог</li>
+                        <li class="child_menu">Каталог
+                            <ul class="block_header__menu--mobile">
+                                <li>Тротуарная плитка и брусчатка</li>
+                                <li>Бордюры</li>
+                                <li>Декоративные камни</li>
+                            </ul>
+                        </li>
                         <li>Акции</li>
                         <li>Где купить</li>
                         <li>Новости</li>
@@ -72,48 +78,163 @@
             </div>
         </div>
     </header>
+    <div class="form_popap">
+        <div class="container">
+            <div class="left">
+                <div class="login">Связаться с нами</div>
+                <div class="eula">В ближайшее время наш менеджер Вам перезвонит</div>
+            </div>
+            <div class="right">
+                <div class="form-esc">
+                    <span></span>
+                    <span></span>
+                </div>
+                <svg viewBox="0 0 320 300">
+              <defs>
+                <linearGradient
+                                inkscape:collect="always"
+                                id="linearGradient"
+                                x1="13"
+                                y1="193.49992"
+                                x2="307"
+                                y2="393.49992"
+                                gradientUnits="userSpaceOnUse">
+                  <stop
+                        style="stop-color:var(--color-green);"
+                        offset="0"
+                        id="stop876" />
+                  <stop
+                        style="stop-color:var(--color-black);"
+                        offset="1"
+                        id="stop878" />
+                </linearGradient>
+              </defs>
+              <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
+            </svg>
+                <div class="form">
+                    <label for="name_form">Ваше имя</label>
+                    <input type="text" id="name_form">
+                    <label for="phone_form">Номер телефона</label>
+                    <input type="phone" id="phone_form">
 
+                    <input type="submit" id="submit" value="Отправить">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script>
+        document.querySelectorAll('.form-esc').forEach(i => {
+            i.addEventListener('click', () => {
+                i.closest('.form_popap').style.display = 'none';
+            });
+        });
+
+        document.querySelectorAll('[data-zvonok]').forEach(i => {
+            i.addEventListener('click', () => {
+                document.querySelector('.form_popap').style.display = 'flex';
+            });
+        });
+
+
+        var current = null;
+        document.querySelector('#name_form').addEventListener('focus', function(e) {
+            if (current) current.pause();
+            current = anime({
+                targets: 'path',
+                strokeDashoffset: {
+                    value: 0,
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                },
+                strokeDasharray: {
+                    value: '240 1386',
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                }
+            });
+        });
+        document.querySelector('#phone_form').addEventListener('focus', function(e) {
+            if (current) current.pause();
+            current = anime({
+                targets: 'path',
+                strokeDashoffset: {
+                    value: -336,
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                },
+                strokeDasharray: {
+                    value: '240 1386',
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                }
+            });
+        });
+
+        document.querySelector('#submit').addEventListener('focus', function(e) {
+            if (current) current.pause();
+            current = anime({
+                targets: 'path',
+                strokeDashoffset: {
+                    value: -730,
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                },
+                strokeDasharray: {
+                    value: '530 1386',
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                }
+            });
+        });
+    </script>
     <div class="section_blog">
         <div class="container">
             <h1 class="h2_background"><span>Блог</span></h1>
             <div class="section_blog__box">
                 <div class="section_blog__item">
-                    <div>
+                    <div class="section_blog__item--background"></div>
+                    <div class="section_blog__item--info">
                         <h2>Заголовок</h2>
                         <p>Описание</p>
                     </div>
                     <img src="https://www.stroykamen.ru/upload/iblock/483/dseagh1o6hrmb1k8vti9yx3qq7d1fs4h/weHY7f4aTTk.jpg" alt="">
                 </div>
                 <div class="section_blog__item">
-                    <div>
+                    <div class="section_blog__item--background"></div>
+                    <div class="section_blog__item--info">
                         <h2>Заголовок</h2>
                         <p>Описание</p>
                     </div>
                     <img src="https://www.stroykamen.ru/upload/iblock/483/dseagh1o6hrmb1k8vti9yx3qq7d1fs4h/weHY7f4aTTk.jpg" alt="">
                 </div>
                 <div class="section_blog__item">
-                    <div>
+                    <div class="section_blog__item--background"></div>
+                    <div class="section_blog__item--info">
                         <h2>Заголовок</h2>
                         <p>Описание</p>
                     </div>
                     <img src="https://www.stroykamen.ru/upload/iblock/483/dseagh1o6hrmb1k8vti9yx3qq7d1fs4h/weHY7f4aTTk.jpg" alt="">
                 </div>
                 <div class="section_blog__item">
-                    <div>
+                    <div class="section_blog__item--background"></div>
+                    <div class="section_blog__item--info">
                         <h2>Заголовок</h2>
                         <p>Описание</p>
                     </div>
                     <img src="https://www.stroykamen.ru/upload/iblock/483/dseagh1o6hrmb1k8vti9yx3qq7d1fs4h/weHY7f4aTTk.jpg" alt="">
                 </div>
                 <div class="section_blog__item">
-                    <div>
+                    <div class="section_blog__item--background"></div>
+                    <div class="section_blog__item--info">
                         <h2>Заголовок</h2>
                         <p>Описание</p>
                     </div>
                     <img src="https://www.stroykamen.ru/upload/iblock/483/dseagh1o6hrmb1k8vti9yx3qq7d1fs4h/weHY7f4aTTk.jpg" alt="">
                 </div>
                 <div class="section_blog__item">
-                    <div>
+                    <div class="section_blog__item--background"></div>
+                    <div class="section_blog__item--info">
                         <h2>Заголовок</h2>
                         <p>Описание</p>
                     </div>
