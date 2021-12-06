@@ -60,8 +60,14 @@
                 <div class="block_header__menu">
                     <img src="img/logo.svg" class="block_header__menu--img" alt="">
                     <ul class="fl-align">
-                        <li>Главная</li>
-                        <li>Каталог</li>
+                        <li><a href="/">Главная</a></li>
+                        <li class="child_menu">Каталог
+                            <ul class="block_header__menu--mobile">
+                                <li>Тротуарная плитка и брусчатка</li>
+                                <li>Бордюры</li>
+                                <li>Декоративные камни</li>
+                            </ul>
+                        </li>
                         <li>Акции</li>
                         <li>Где купить</li>
                         <li>Новости</li>
@@ -75,80 +81,108 @@
     <div class="section_contact">
         <div class="container">
             <h1 class="h2_background"><span>Контакты</span></h1>
-            <div class="tabs">
-                <input type="radio" id="radio-1" name="tabs" checked />
-                <label class="tab" for="radio-1">Контакты</label>
-                <input type="radio" id="radio-2" name="tabs" />
-                <label class="tab" for="radio-2">Отдел продаж<span class="notification">9</span></label>
-                <input type="radio" id="radio-3" name="tabs" />
-                <label class="tab" for="radio-3">Офисы продаж<span class="notification">3</span></label>
-                <input type="radio" id="radio-4" name="tabs" />
-                <label class="tab" for="radio-4">Производство</label>
-                <span class="glider"></span>
+            <div class="section_contact__tabs">
+                <div class="tabs">
+                    <input type="radio" id="radio-1" name="tabs" checked />
+                    <label class="tab" for="radio-1" data-tabs="contact">Все магазины<br>и дилеры на карте<span class="notification">45</span></label>
+                    <input type="radio" id="radio-2" name="tabs" />
+                    <label class="tab" for="radio-2" data-tabs="ofis">Фирменные<br> магазины<span class="notification">3</span></label>
+                    <input type="radio" id="radio-3" name="tabs" />
+                    <label class="tab" for="radio-3" data-tabs="otdel">Контакты<br> сотрудников<span class="notification">9</span></label>
+                    <input type="radio" id="radio-4" name="tabs" />
+                    <label class="tab" for="radio-4" data-tabs="proizvodstvo">Адрес завода<br>и схема проезда</label>
+                    <span class="glider"></span>
+                </div>
             </div>
         </div>
         <div class="tabs_box">
             <div class="tabs_box__element">
-                <div class="tabs_box__element--map" id="tabs_box__element--map" style="width:100%;height:600px">
-                    <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afeb0756fa23d3a5e12f8786de15d771638cdc09674ab8fbc4e3b6aba21beae7a&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script> -->
-                </div>
                 <div class="tabs_box__element--block active" data-block="contact">
+                    <div class="tabs_box__element--map" id="tabs_box__element--map" style="width:100%;height:500px">
+                        <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afeb0756fa23d3a5e12f8786de15d771638cdc09674ab8fbc4e3b6aba21beae7a&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script> -->
+                    </div>
                     <div class="container">
-                        <div class="tabs_box__element--form">
-                            <h2>Связаться с нами</h2>
-                            <form action="">
-                                <div class="input-container ic1">
-                                    <input id="firstname" class="input" type="text" placeholder=" " />
-                                    <div class="cut"></div>
-                                    <label for="firstname" class="placeholder">Ваше имя</label>
-                                </div>
-                                <div class="input-container ic2">
-                                    <input id="lastname" class="input" type="text" placeholder=" " />
-                                    <div class="cut"></div>
-                                    <label for="lastname" class="placeholder">Ваше номер телефона</label>
-                                </div>
-                                <div class="input-container ic3">
-                                    <input id="lastname" class="input" type="text" placeholder=" " />
-                                    <div class="cut"></div>
-                                    <label for="lastname" class="placeholder">Комментарий</label>
-                                </div>
+                        <div class="tabs_box__magazine">
+                            <p class="tabs_box__magazine--name">
+                                ИЗКМ
+                            </p>
+                            <p class="tabs_box__magazine--street">ул. Олега Кошевого, 2</p>
+                            <a class="tabs_box__magazine--phone" href="tel:+7 (3412) 77-15-40">+7 (3412) 77-15-40</a>
+                            <p class="tabs_box__magazine--rezhim">
+                                Пн - Пт: с 8:00 до 17:00<br> Без перерыва на обед.
+                            </p>
+                        </div>
+                        <div class="tabs_box__magazine">
+                            <p class="tabs_box__magazine--name">
+                                ИЗКМ
+                            </p>
+                            <p class="tabs_box__magazine--street">ул. Олега Кошевого, 2</p>
+                            <a class="tabs_box__magazine--phone" href="tel:+7 (3412) 77-15-40">+7 (3412) 77-15-40</a>
+                            <p class="tabs_box__magazine--rezhim">
+                                Пн - Пт: с 8:00 до 17:00<br> Без перерыва на обед.
+                            </p>
+                        </div>
+                        <div class="tabs_box__magazine">
+                            <p class="tabs_box__magazine--name">
+                                ИЗКМ
+                            </p>
+                            <p class="tabs_box__magazine--street">ул. Олега Кошевого, 2</p>
+                            <a class="tabs_box__magazine--phone" href="tel:+7 (3412) 77-15-40">+7 (3412) 77-15-40</a>
+                            <p class="tabs_box__magazine--rezhim">
+                                Пн - Пт: с 8:00 до 17:00<br> Без перерыва на обед.
+                            </p>
+                        </div>
+                        <div class="tabs_box__magazine">
+                            <p class="tabs_box__magazine--name">
+                                ИЗКМ
+                            </p>
+                            <p class="tabs_box__magazine--street">ул. Олега Кошевого, 2</p>
+                            <a class="tabs_box__magazine--phone" href="tel:+7 (3412) 77-15-40">+7 (3412) 77-15-40</a>
+                            <p class="tabs_box__magazine--rezhim">
+                                Пн - Пт: с 8:00 до 17:00<br> Без перерыва на обед.
+                            </p>
+                        </div>
+                        <div class="tabs_box__magazine">
+                            <p class="tabs_box__magazine--name">
+                                ИЗКМ
+                            </p>
+                            <p class="tabs_box__magazine--street">ул. Олега Кошевого, 2</p>
+                            <a class="tabs_box__magazine--phone" href="tel:+7 (3412) 77-15-40">+7 (3412) 77-15-40</a>
+                            <p class="tabs_box__magazine--rezhim">
+                                Пн - Пт: с 8:00 до 17:00<br> Без перерыва на обед.
+                            </p>
+                        </div>
+                        <div class="tabs_box__magazine">
+                            <p class="tabs_box__magazine--name">
+                                ИЗКМ
+                            </p>
+                            <p class="tabs_box__magazine--street">ул. Олега Кошевого, 2</p>
+                            <a class="tabs_box__magazine--phone" href="tel:+7 (3412) 77-15-40">+7 (3412) 77-15-40</a>
+                            <p class="tabs_box__magazine--rezhim">
+                                Пн - Пт: с 8:00 до 17:00<br> Без перерыва на обед.
+                            </p>
+                        </div>
+                        <div class="tabs_box__magazine">
+                            <p class="tabs_box__magazine--name">
+                                ИЗКМ
+                            </p>
+                            <p class="tabs_box__magazine--street">ул. Олега Кошевого, 2</p>
+                            <a class="tabs_box__magazine--phone" href="tel:+7 (3412) 77-15-40">+7 (3412) 77-15-40</a>
+                            <p class="tabs_box__magazine--rezhim">
+                                Пн - Пт: с 8:00 до 17:00<br> Без перерыва на обед.
+                            </p>
+                        </div>
+                        <div class="tabs_box__magazine">
+                            <p class="tabs_box__magazine--name">
+                                ИЗКМ
+                            </p>
+                            <p class="tabs_box__magazine--street">ул. Олега Кошевого, 2</p>
+                            <a class="tabs_box__magazine--phone" href="tel:+7 (3412) 77-15-40">+7 (3412) 77-15-40</a>
+                            <p class="tabs_box__magazine--rezhim">
+                                Пн - Пт: с 8:00 до 17:00<br> Без перерыва на обед.
+                            </p>
+                        </div>
 
-                                <input type="submit" value="Оставить заявку">
-                            </form>
-                        </div>
-                        <div class="tabs_box__element--contacts">
-                            <div class="tabs_box__element--item tabs_box__element--oveeflow">
-                                <div class="tabs_box__element--img">
-                                    <img src="img/adress-white.png" alt="">
-                                </div>
-                                <ul>
-                                    <li>Офисы продаж</li>
-                                    <li>г. Ижевск, ул. О. Кошевого, 2 <span data-street="г. Ижевск, ул. О. Кошевого, 2">Найти на карте</span> </li>
-                                    <li>г. Ижевск, Воткинское шоссе, 31<span data-street="г. Ижевск, Воткинское шоссе, 31">Найти на карте</span></li>
-                                    <li>г. Ижевск, ул. Молодежная, 107Б<span data-street="г. Ижевск, ул. Молодежная, 107Б">Найти на карте</span></li>
-                                    <li>п. Чур, Заводской проезд, 1<span data-street="п. Чур, Заводской проезд, 1">Найти на карте</span></li>
-                                </ul>
-                                <p class="all_label">Показать все адреса</p>
-                            </div>
-                            <div class="tabs_box__element--item">
-                                <div class="tabs_box__element--img">
-                                    <img src="img/phone-call.png" alt="">
-                                </div>
-                                <ul>
-                                    <li>Справочная служба</li>
-                                    <li><a href="tel:+73412771795">77-17-95</a></li>
-                                </ul>
-                            </div>
-                            <div class="tabs_box__element--item">
-                                <div class="tabs_box__element--img">
-                                    <img src="img/mail.png" alt="">
-                                </div>
-                                <ul>
-                                    <li>E-mail</li>
-                                    <li><a href="mailto:zavod_ecoblock@mail.ru">zavod_ecoblock@mail.ru</a></li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="tabs_box__element--block" data-block="otdel">
@@ -275,6 +309,63 @@
                                 <a class="ofs-mail" href="mailto:zavod_ecoblock@mail.ru">zavod_ecoblock@mail.ru</a>
                             </div>
                         </div>
+                        <div class="tabs_box__element--box">
+                            <div class="tabs_box__element--form">
+                                <h2>Связаться с нами</h2>
+                                <form action="">
+                                    <div class="input-container ic1">
+                                        <input id="firstname" class="input" type="text" placeholder=" " />
+                                        <div class="cut"></div>
+                                        <label for="firstname" class="placeholder">Ваше имя</label>
+                                    </div>
+                                    <div class="input-container ic2">
+                                        <input id="lastname" class="input" type="text" placeholder=" " />
+                                        <div class="cut"></div>
+                                        <label for="lastname" class="placeholder">Ваше номер телефона</label>
+                                    </div>
+                                    <div class="input-container ic3">
+                                        <input id="lastname" class="input" type="text" placeholder=" " />
+                                        <div class="cut"></div>
+                                        <label for="lastname" class="placeholder">Комментарий</label>
+                                    </div>
+
+                                    <input type="submit" value="Оставить заявку">
+                                </form>
+                            </div>
+                            <div class="tabs_box__element--contacts">
+                                <div class="tabs_box__element--item tabs_box__element--oveeflow">
+                                    <div class="tabs_box__element--img">
+                                        <img src="img/adress-white.png" alt="">
+                                    </div>
+                                    <ul>
+                                        <li>Офисы продаж</li>
+                                        <li>г. Ижевск, ул. О. Кошевого, 2 <span data-street="г. Ижевск, ул. О. Кошевого, 2">Найти на карте</span> </li>
+                                        <li>г. Ижевск, Воткинское шоссе, 31<span data-street="г. Ижевск, Воткинское шоссе, 31">Найти на карте</span></li>
+                                        <li>г. Ижевск, ул. Молодежная, 107Б<span data-street="г. Ижевск, ул. Молодежная, 107Б">Найти на карте</span></li>
+                                        <li>п. Чур, Заводской проезд, 1<span data-street="п. Чур, Заводской проезд, 1">Найти на карте</span></li>
+                                    </ul>
+                                    <p class="all_label">Показать все адреса</p>
+                                </div>
+                                <div class="tabs_box__element--item">
+                                    <div class="tabs_box__element--img">
+                                        <img src="img/phone-call.png" alt="">
+                                    </div>
+                                    <ul>
+                                        <li>Справочная служба</li>
+                                        <li><a href="tel:+73412771795">77-17-95</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tabs_box__element--item">
+                                    <div class="tabs_box__element--img">
+                                        <img src="img/mail.png" alt="">
+                                    </div>
+                                    <ul>
+                                        <li>E-mail</li>
+                                        <li><a href="mailto:zavod_ecoblock@mail.ru">zavod_ecoblock@mail.ru</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -346,21 +437,130 @@
             </div>
         </div>
     </footer>
+    <div class="form_popap">
+        <div class="container">
+            <div class="left">
+                <div class="login">Связаться с нами</div>
+                <div class="eula">В ближайшее время наш менеджер Вам перезвонит</div>
+            </div>
+            <div class="right">
+                <div class="form-esc">
+                    <span></span>
+                    <span></span>
+                </div>
+                <svg viewBox="0 0 320 300">
+              <defs>
+                <linearGradient
+                                inkscape:collect="always"
+                                id="linearGradient"
+                                x1="13"
+                                y1="193.49992"
+                                x2="307"
+                                y2="393.49992"
+                                gradientUnits="userSpaceOnUse">
+                  <stop
+                        style="stop-color:var(--color-green);"
+                        offset="0"
+                        id="stop876" />
+                  <stop
+                        style="stop-color:var(--color-black);"
+                        offset="1"
+                        id="stop878" />
+                </linearGradient>
+              </defs>
+              <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
+            </svg>
+                <div class="form">
+                    <label for="name_form">Ваше имя</label>
+                    <input type="text" id="name_form">
+                    <label for="phone_form">Номер телефона</label>
+                    <input type="phone" id="phone_form">
 
+                    <input type="submit" id="submit" value="Отправить">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script>
+        document.querySelectorAll('.form-esc').forEach(i => {
+            i.addEventListener('click', () => {
+                i.closest('.form_popap').style.display = 'none';
+            });
+        });
+
+        document.querySelectorAll('[data-zvonok]').forEach(i => {
+            i.addEventListener('click', () => {
+                document.querySelector('.form_popap').style.display = 'flex';
+            });
+        });
+
+
+        var current = null;
+        document.querySelector('#name_form').addEventListener('focus', function(e) {
+            if (current) current.pause();
+            current = anime({
+                targets: 'path',
+                strokeDashoffset: {
+                    value: 0,
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                },
+                strokeDasharray: {
+                    value: '240 1386',
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                }
+            });
+        });
+        document.querySelector('#phone_form').addEventListener('focus', function(e) {
+            if (current) current.pause();
+            current = anime({
+                targets: 'path',
+                strokeDashoffset: {
+                    value: -336,
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                },
+                strokeDasharray: {
+                    value: '240 1386',
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                }
+            });
+        });
+
+        document.querySelector('#submit').addEventListener('focus', function(e) {
+            if (current) current.pause();
+            current = anime({
+                targets: 'path',
+                strokeDashoffset: {
+                    value: -730,
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                },
+                strokeDasharray: {
+                    value: '530 1386',
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                }
+            });
+        });
+    </script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=9f2c8c4d-5788-4c89-8b3e-49139b3f1988&lang=ru_RU" type="text/javascript"></script>
     <script>
         document.querySelectorAll('.tabs .tab').forEach((i, ind) => {
             i.addEventListener('click', (e) => {
                 document.querySelectorAll('.tabs_box__element--block').forEach((el, index) => {
                     el.classList.remove('active')
-                    if (ind === index) {
+                    if (i.getAttribute('data-tabs') === el.getAttribute('data-block')) {
                         el.classList.add('active')
                     }
-                    if (ind === 0) {
-                        document.querySelector('.tabs_box__element--map').style.display = 'block'
-                    } else {
-                        document.querySelector('.tabs_box__element--map').style.display = 'none'
-                    }
+                    // if (ind === 0) {
+                    //     document.querySelector('.tabs_box__element--map').style.display = 'block'
+                    // } else {
+                    //     document.querySelector('.tabs_box__element--map').style.display = 'none'
+                    // }
                 });
             });
         });
