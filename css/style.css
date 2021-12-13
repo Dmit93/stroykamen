@@ -8,7 +8,7 @@
 
 :root {
   --color-green: #45A338;
-  --color-black: #424F60;
+  --color-black: #12171c;
   --primary-color: #185ee0;
   --secondary-color: #e6eef9;
 }
@@ -19,7 +19,7 @@ input[type="submit"] {
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: 'MyriadPRO';
 }
 
 a {
@@ -280,6 +280,60 @@ header.header_overflow {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 63% 100%, 0 69%);
 }
 
+.block_header__social {
+  margin-top: 20px;
+  display: none;
+}
+
+.block_header__social a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.block_header__social a {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.block_header__social a svg {
+  fill: #fff;
+  width: 20px;
+}
+
+.block_header__social .social_vk {
+  background: #507299;
+}
+
+.block_header__social .social_instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.block_header__social .social_youtube {
+  background: #e62117;
+}
+
+.block_header__social .social_whatsapp {
+  background: #43d854;
+}
+
+.block_header__sect {
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+}
+
+.block_header__sect--title {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.block_header__sect--opis {
+  font-weight: bold;
+}
+
 .block_header__top {
   padding: 5px 0 20px 0;
   width: 90%;
@@ -292,8 +346,48 @@ header.header_overflow {
   margin-right: 10%;
 }
 
+.block_header__top .block_header__social {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
+  margin-top: 0;
+}
+
+.block_header__top .block_header__social a {
+  margin-right: 0;
+}
+
 .block_header__menu {
   padding-bottom: 13px;
+}
+
+.block_header__menu--esc {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.block_header__menu--esc span {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: block;
+}
+
+.block_header__menu--esc span:first-child {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 12px;
+}
+
+.block_header__menu--esc span:last-child {
+  margin-top: 21px;
+  transform: rotate(-45deg);
+  position: relative;
+  bottom: 9px;
 }
 
 .block_header__menu ul {
@@ -304,7 +398,7 @@ header.header_overflow {
 
 .block_header__menu ul li {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
   z-index: 9;
   padding: 4px;
@@ -445,22 +539,44 @@ li .block_header__menu--mobile li:after {
 }
 
 @media (max-width: 992px) {
+  .block_header__social {
+    display: flex;
+  }
+  .block_header__sect {
+    display: block;
+  }
   .block_header__menu--img {
     display: flex;
+    margin: 0 auto 10px;
+    justify-content: center;
   }
   .block_header__menu ul {
     width: 50%;
     flex-direction: column;
-    align-items: self-start;
-    margin-left: 9%;
+    margin-top: 27px;
   }
   .block_header__menu {
-    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: 0px;
-    opacity: 0;
-    z-index: -1;
+    height: 100%;
+    background: var(--color-black);
+    margin-top: 0;
+    padding-top: 20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    transition: .7s ease;
+    transform: translate(-100%);
+  }
+  .block_header__menu--esc {
+    display: block;
+  }
+  .block_header__menu.active {
+    transform: translateX(0);
   }
   .block_header__menu ul li {
     margin-bottom: 15px;
@@ -2315,4 +2431,32 @@ figure.photo_album_box.hover figcaption {
   src: url("../fonts/Montserrat-SemiBold.ttf");
   src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: 800;
+}
+
+@font-face {
+  font-family: "Franklin";
+  src: url("../fonts/Franklin.ttf");
+  src: url("../fonts/Franklin.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Franklin";
+  src: url("../fonts/Franklin-medium.ttf");
+  src: url("../fonts/Franklin-medium.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "MyriadPRO";
+  src: url("../fonts/MYRIADPRO-REGULAR.OTF");
+  src: url("../fonts/MYRIADPRO-REGULAR.OTF") format("OpenType");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "MyriadPRO";
+  src: url("../fonts/MYRIADPRO-BOLD.OTF");
+  src: url("../fonts/MYRIADPRO-BOLD.OTF") format("OpenType");
+  font-weight: 600;
 }
