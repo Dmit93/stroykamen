@@ -398,7 +398,8 @@ header.header_overflow {
 
 .block_header__menu ul li {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
+  text-transform:uppercase;
   position: relative;
   z-index: 9;
   padding: 4px;
@@ -1145,7 +1146,7 @@ li .block_header__menu--mobile li:after {
 }
 
 footer {
-  background: #2d3642;
+  background: var(--color-black);
 }
 
 footer .container {
@@ -2445,6 +2446,13 @@ figure.photo_album_box.hover figcaption {
   src: url("../fonts/Franklin-medium.ttf");
   src: url("../fonts/Franklin-medium.ttf") format("truetype");
   font-weight: 600;
+}
+
+@font-face {
+  font-family: "MyriadPRO";
+  src: url("../fonts/MyriadPro-Light.otf");
+  src: url("../fonts/MyriadPro-Light.otf") format("OpenType");
+  font-weight: 400;
 }
 
 @font-face {
