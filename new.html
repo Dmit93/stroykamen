@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+</head>
+
+<body>
+
+
+    <div class="background_overlay"></div>
+
+    <header>
+        <div class="header_mobile" style="display:none">
+            <div class="header_mobile--gamburger">
+                <span></span><span></span><span></span>
+            </div>
+            <img class="header_mobile--logo" src="https://www.stroykamen.ru/logo_mob.svg" alt="">
+            <a class="header_bottom__cart" href="">
+                <img src="../img/cart_top.png" alt="">
+            </a>
+            <div class="header_mobile--menu">
+                <!-- <div class="header_bottom__btnCatalog">
+                    <div>
+                        <span></span><span></span><span></span>
+                    </div>
+                    Каталог
+                    <ul class="header_bottom__menu">
+                        <li>Тротуарная плитка и брусчатка</li>
+                        <li>Бордюры</li>
+                        <li>Декоративные камни</li>
+                    </ul>
+                </div> -->
+                <ul class="fl-align">
+                    <li>Главная</li>
+                    <li>Доставка</li>
+                    <li>Акции</li>
+                    <li>Где купить</li>
+                    <li>Новости</li>
+                    <li>Контакты</li>
+                </ul>
+                <a class="fl-align" href="+73412771795"><img src="../img/call.png" alt=""> 77-17-95</a>
+                <p>Время работы Пн-Пт: 8:00-17:00</p>
+                <div class="header__messenger">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+                    </a>
+                    <a href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12.892 13.745s.427.038.656-.247l.448-.563c.216-.28.738-.458 1.249-.174.676.382 1.55.982 2.149 1.541.33.278.407.688.182 1.121l-.002.009c-.232.408-.541.791-.932 1.148l-.009.006c-.44.367-.946.58-1.487.404l-.01-.014c-.972-.275-3.304-1.464-4.79-2.649-2.431-1.918-4.159-5.082-4.637-6.778l-.015-.01c-.176-.543.039-1.049.404-1.488l.007-.008c.357-.391.739-.701 1.148-.932l.009-.002c.432-.225.842-.149 1.121.182.367.379 1.056 1.291 1.54 2.149.284.51.106 1.033-.173 1.248l-.564.448c-.284.23-.247.657-.247.657s.834 3.156 3.953 3.952zm4.907-2.616c-.167 0-.303-.135-.304-.302-.014-1.83-.564-3.288-1.634-4.332-1.072-1.045-2.427-1.581-4.027-1.592-.168-.001-.303-.138-.301-.306.001-.167.136-.301.303-.301h.002c1.762.012 3.258.606 4.447 1.764 1.19 1.162 1.802 2.765 1.817 4.763.001.167-.133.304-.301.306h-.002zm-1.595-.624h-.007c-.168-.004-.301-.143-.297-.31.024-1.038-.273-1.878-.906-2.569-.63-.689-1.495-1.065-2.645-1.149-.167-.013-.293-.158-.281-.325.013-.167.158-.293.325-.281 1.294.095 2.32.548 3.049 1.345.733.8 1.092 1.807 1.065 2.992-.004.165-.139.297-.303.297zm-1.558-.522c-.161 0-.295-.126-.303-.289-.051-1.03-.537-1.534-1.527-1.588-.168-.009-.296-.152-.287-.319.009-.168.151-.296.319-.287 1.308.07 2.034.819 2.101 2.164.009.167-.12.31-.288.318l-.015.001zm6.817 3.469c-.605 4.877-4.172 5.185-4.83 5.396-.28.09-2.882.737-6.152.524 0 0-2.438 2.94-3.199 3.705-.119.119-.258.167-.352.145-.131-.032-.167-.188-.165-.414l.02-4.016v-.001c-4.762-1.323-4.485-6.295-4.431-8.898.054-2.603.543-4.736 1.996-6.17 2.61-2.364 7.987-2.011 7.987-2.011 4.541.02 6.717 1.387 7.222 1.845 1.675 1.434 2.528 4.867 1.904 9.895zm-.652-11.113c-.597-.548-3.007-2.298-8.375-2.322 0 0-6.33-.382-9.416 2.45-1.718 1.718-2.322 4.231-2.386 7.348-.063 3.118-.146 8.958 5.484 10.542l.006.002-.004 2.416s-.035.979.609 1.179c.779.241 1.236-.502 1.981-1.304.408-.44.971-1.086 1.397-1.58 3.851.322 6.812-.417 7.149-.526.777-.253 5.177-.816 5.893-6.657.738-6.022-.358-9.83-2.338-11.548z"></path></svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="header_top">
+                <div class="header__calBuy fl-align"><img src="../img/map_adress.png" alt=""> Где купить
+                    <div class="header__calBuy--menu">
+                        <div class="section_contactIndex--officeItem section_contactIndex--1">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_2_b.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_2_b.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_2_b.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                                </div>
+                                <div class="swiper-button-next">
+                                    <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                                </div>
+                            </div>
+                            <div class="section_contactIndex--officeText">
+                                <h3>Офис продаж Ижевского завода кирпича и керамзита</h3>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>Телефон</p>
+                                    <p>
+                                        <a href="tel:+73412771540">77-15-40</a>
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>Адрес</p>
+                                    <p>
+                                        г. Ижевск, ул. О. Кошевого, 2
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>График работы</p>
+                                    <p>
+                                        Пн-Пт: с 8:00 до 17:00<br> Сб-Вс: выходной<br> Без перерыва на обед
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine section_contactIndex--end">
+                                    <a class="section_contactIndex--officeLine__shema" href=""><img src="../img/scheme.png" alt=""> Схема проезда</a>
+                                    <a class="section_contactIndex--officeLine__link" href="">Подробнее о шоу-руме</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="section_contactIndex--officeItem section_contactIndex--2">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_3_b.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_3_b.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_3_b.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                                </div>
+                                <div class="swiper-button-next">
+                                    <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                                </div>
+                            </div>
+
+                            <div class="section_contactIndex--officeText">
+                                <h3>ТЦ "Азбука ремонта" (1 этаж, отдел 120 А)</h3>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>Телефон</p>
+                                    <p>
+                                        <a href="tel:+79225002865">+7 (922) 500-28-65</a>
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>Адрес</p>
+                                    <p>
+                                        г. Ижевск, ул. Молодежная, 107 Б
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>График работы</p>
+                                    <p>
+                                        Пн-Пт: с 8:00 до 17:00<br> Сб-Вс: выходной<br> Без перерыва на обед
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine section_contactIndex--end">
+                                    <a class="section_contactIndex--officeLine__shema" href=""><img src="../img/scheme.png" alt=""> Схема проезда</a>
+                                    <a class="section_contactIndex--officeLine__link" href="">Подробнее о шоу-руме</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section_contactIndex--officeItem section_contactIndex--3">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/back-f.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/back-f.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/back-f.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                                </div>
+                                <div class="swiper-button-next">
+                                    <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                                </div>
+                            </div>
+
+                            <div class="section_contactIndex--officeText">
+                                <h3>Офис продаж завода "Альтаир"</h3>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>Телефон</p>
+                                    <p>
+                                        <a href="tel:+79225002865">+7 (922) 500-28-65</a>
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>Адрес</p>
+                                    <p>
+                                        г. Ижевск, ул. Воткинское шоссе, 31
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>График работы</p>
+                                    <p>
+                                        Пн-Пт: с 8:00 до 17:00<br> Сб-Вс: выходной<br> Без перерыва на обед
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine section_contactIndex--end">
+                                    <a class="section_contactIndex--officeLine__shema" href=""><img src="../img/scheme.png" alt=""> Схема проезда</a>
+                                    <a class="section_contactIndex--officeLine__link" href="">Подробнее о шоу-руме</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="fl-align" href="+73412771795"><img src="../img/call.png" alt=""> 77-17-95</a>
+                <p>Время работы Пн-Пт: 8:00-17:00</p>
+                <div class="header__messenger">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+                    </a>
+                    <a href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12.892 13.745s.427.038.656-.247l.448-.563c.216-.28.738-.458 1.249-.174.676.382 1.55.982 2.149 1.541.33.278.407.688.182 1.121l-.002.009c-.232.408-.541.791-.932 1.148l-.009.006c-.44.367-.946.58-1.487.404l-.01-.014c-.972-.275-3.304-1.464-4.79-2.649-2.431-1.918-4.159-5.082-4.637-6.778l-.015-.01c-.176-.543.039-1.049.404-1.488l.007-.008c.357-.391.739-.701 1.148-.932l.009-.002c.432-.225.842-.149 1.121.182.367.379 1.056 1.291 1.54 2.149.284.51.106 1.033-.173 1.248l-.564.448c-.284.23-.247.657-.247.657s.834 3.156 3.953 3.952zm4.907-2.616c-.167 0-.303-.135-.304-.302-.014-1.83-.564-3.288-1.634-4.332-1.072-1.045-2.427-1.581-4.027-1.592-.168-.001-.303-.138-.301-.306.001-.167.136-.301.303-.301h.002c1.762.012 3.258.606 4.447 1.764 1.19 1.162 1.802 2.765 1.817 4.763.001.167-.133.304-.301.306h-.002zm-1.595-.624h-.007c-.168-.004-.301-.143-.297-.31.024-1.038-.273-1.878-.906-2.569-.63-.689-1.495-1.065-2.645-1.149-.167-.013-.293-.158-.281-.325.013-.167.158-.293.325-.281 1.294.095 2.32.548 3.049 1.345.733.8 1.092 1.807 1.065 2.992-.004.165-.139.297-.303.297zm-1.558-.522c-.161 0-.295-.126-.303-.289-.051-1.03-.537-1.534-1.527-1.588-.168-.009-.296-.152-.287-.319.009-.168.151-.296.319-.287 1.308.07 2.034.819 2.101 2.164.009.167-.12.31-.288.318l-.015.001zm6.817 3.469c-.605 4.877-4.172 5.185-4.83 5.396-.28.09-2.882.737-6.152.524 0 0-2.438 2.94-3.199 3.705-.119.119-.258.167-.352.145-.131-.032-.167-.188-.165-.414l.02-4.016v-.001c-4.762-1.323-4.485-6.295-4.431-8.898.054-2.603.543-4.736 1.996-6.17 2.61-2.364 7.987-2.011 7.987-2.011 4.541.02 6.717 1.387 7.222 1.845 1.675 1.434 2.528 4.867 1.904 9.895zm-.652-11.113c-.597-.548-3.007-2.298-8.375-2.322 0 0-6.33-.382-9.416 2.45-1.718 1.718-2.322 4.231-2.386 7.348-.063 3.118-.146 8.958 5.484 10.542l.006.002-.004 2.416s-.035.979.609 1.179c.779.241 1.236-.502 1.981-1.304.408-.44.971-1.086 1.397-1.58 3.851.322 6.812-.417 7.149-.526.777-.253 5.177-.816 5.893-6.657.738-6.022-.358-9.83-2.338-11.548z"></path></svg>
+                    </a>
+                </div>
+                <div class="header__btn">
+                    <button data-zvonok>Заказать звонок</button>
+                    <button data-price>Стать дилером</button>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom overflow">
+            <div class="container fl-align">
+                <img class="header_logo" src="/img/logo.svg" alt="">
+                <div class="header_bottom__btnCatalog">
+                    <div>
+                        <span></span><span></span><span></span>
+                    </div>
+                    Каталог
+                    <ul class="header_bottom__menu">
+                        <li>Тротуарная плитка и брусчатка</li>
+                        <li>Бордюры</li>
+                        <li>Декоративные камни</li>
+                    </ul>
+                </div>
+                <p>Завод качественной тротуарной плитки</p>
+                <ul class="fl-align">
+                    <li>Главная</li>
+                    <li>Доставка</li>
+                    <li>Акции</li>
+                    <li>Где купить</li>
+                    <li>Новости</li>
+                    <li>Контакты</li>
+                </ul>
+                <a class="header_bottom__cart" href="">
+                    <img src="../img/cart_top.png" alt="">
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- <header>
+        <div class="header__flex">
+            <div class="header__logo">
+                <img src="/img/logo.svg" alt="">
+                <p>Завод качественной тротуарной плитки «Строй Камень»</p>
+            </div>
+            <div class="block_header">
+                <div class="block_header__top fl-align">
+                    <a href="">
+                        <img src="/img/adress.png" alt=""> Где купить?</a>
+                    <a href="tel:+73412771795"><img src="/img/phone.png" alt="">77-17-95</a>
+                    <div class="block_header__btn">
+                        <button data-zvonok>Заказать звонок</button>
+                        <button data-price>Скачать прайс</button>
+                    </div>
+                </div>
+                <div class="block_header__mobMenu">
+                    <div id="menu-toggle">
+                        <div id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div id="cross">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="tel:+73412771795">
+                            <img src="/img/phone-call.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <img src="/img/mail.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/img/search.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/img/cart.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/img/adress-white.png" alt="">
+                    </div>
+                </div>
+                <img src="/img/logo.svg" class="block_header__mobLogo" alt="">
+                <div class="block_header__menu">
+                    <img src="/img/logo.svg" class="block_header__menu--img" alt="">
+                    <ul class="fl-align">
+                        <li>Главная</li>
+                        <li>Каталог</li>
+                        <li>Акции</li>
+                        <li>Где купить</li>
+                        <li>Новости</li>
+                        <li>Контакты</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header> -->
+    <div class="section_info">
+        <div class="container">
+            <div class="section_info__slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="section_info__slider__left">
+                                <img src="/img/banner-top.jpg" alt="">
+
+                            </div>
+                            <div class="section_info__slider__right">
+                                <p class="section_info__slider__rightTitle">Брусчатка «Старый город»</p>
+                                <span class="section_info__slider__rightShildic">
+                            Новинка
+                        </span>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="section_info__slider__left">
+                                <img src="/img/banner-top.jpg" alt="">
+
+                            </div>
+                            <div class="section_info__slider__right">
+                                <p class="section_info__slider__rightTitle">Брусчатка «Старый город»</p>
+                                <span class="section_info__slider__rightShildic">
+                            Новинка
+                        </span>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="section_info__slider__left">
+                                <img src="/img/banner-top.jpg" alt="">
+
+                            </div>
+                            <div class="section_info__slider__right">
+                                <p class="section_info__slider__rightTitle">Брусчатка «Старый город»</p>
+                                <span class="section_info__slider__rightShildic">
+                            Новинка
+                        </span>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-button-prev">
+                        <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="section_info__page">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="section_info__item">
+                                <img src="/img/top_info_1.jpg" alt="">
+                                <h2>укладка брусчатки, благоустройство</h2>
+                                <div>
+                                    <p>Текст</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="section_info__item">
+                                <img src="/img/top_info_2.jpg" alt="">
+                                <h2>интернет магазин</h2>
+                                <div>
+                                    <p>Покупайте больше платите меньше</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="section_info__item">
+                                <img src="/img/top_info_3.jpg" alt="">
+                                <h2>посмотрите портфолио</h2>
+                                <div>
+                                    <p>Более 100 проектов за 7 лет работы</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section_action">
+        <div class="container">
+            <h2>Акции</h2>
+            <div class="section_action__items">
+                <div class="section_action__item">
+                    <img src="https://slavdom.ru/upload/resize_cache/iblock/428/tahxk6ipmkeval5ww9ggtqahn0v10awg/262_163_1/a5f13d53_0bb8_11e6_80ce_003048c9267d_c4fafc44_27fc_11e6_80d1_003048c9267d.jpeg" alt="">
+                    <div class="section_action__item--text">
+                        <h3>6-Брусчатка неокрашенная 196x97x60</h3>
+                    </div>
+                    <div class="section_action__item--info">
+                        <div class="section_action__item--status">
+                            <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="#3da35a"/>
+                              </svg> В наличии
+                        </div>
+
+                        <div class="section_action__item--price">
+                            <span class="section_action__item--priceProcent">-15%</span>
+                            <p class="section_action__item--priceOld">
+                                870 ₽/м2
+                            </p>
+                            <p class="section_action__item--priceNew">
+                                570 ₽/м2
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="section_action__item--btn">
+                        <button class="section_action__item--oneClick">Купить в 1 клик</button>
+                        <button class="section_action__item--cart"><img src="../img/cart_item.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="section_action__item">
+                    <img src="https://slavdom.ru/upload/resize_cache/iblock/428/tahxk6ipmkeval5ww9ggtqahn0v10awg/262_163_1/a5f13d53_0bb8_11e6_80ce_003048c9267d_c4fafc44_27fc_11e6_80d1_003048c9267d.jpeg" alt="">
+                    <div class="section_action__item--text">
+                        <h3>6-Брусчатка неокрашенная 196x97x60</h3>
+                    </div>
+                    <div class="section_action__item--info">
+                        <div class="section_action__item--status">
+                            <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="#3da35a"/>
+                              </svg> В наличии
+                        </div>
+
+                        <div class="section_action__item--price">
+                            <span class="section_action__item--priceProcent">-15%</span>
+                            <p class="section_action__item--priceOld">
+                                870 ₽/м2
+                            </p>
+                            <p class="section_action__item--priceNew">
+                                570 ₽/м2
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="section_action__item--btn">
+                        <button class="section_action__item--oneClick">Купить в 1 клик</button>
+                        <button class="section_action__item--cart"><img src="../img/cart_item.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="section_action__item">
+                    <img src="https://slavdom.ru/upload/resize_cache/iblock/428/tahxk6ipmkeval5ww9ggtqahn0v10awg/262_163_1/a5f13d53_0bb8_11e6_80ce_003048c9267d_c4fafc44_27fc_11e6_80d1_003048c9267d.jpeg" alt="">
+                    <div class="section_action__item--text">
+                        <h3>6-Брусчатка неокрашенная 196x97x60</h3>
+                    </div>
+                    <div class="section_action__item--info">
+                        <div class="section_action__item--status">
+                            <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="#3da35a"/>
+                              </svg> В наличии
+                        </div>
+
+                        <div class="section_action__item--price">
+                            <span class="section_action__item--priceProcent">-15%</span>
+                            <p class="section_action__item--priceOld">
+                                870 ₽/м2
+                            </p>
+                            <p class="section_action__item--priceNew">
+                                570 ₽/м2
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="section_action__item--btn">
+                        <button class="section_action__item--oneClick">Купить в 1 клик</button>
+                        <button class="section_action__item--cart"><img src="../img/cart_item.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="section_action__item">
+                    <img src="https://slavdom.ru/upload/resize_cache/iblock/428/tahxk6ipmkeval5ww9ggtqahn0v10awg/262_163_1/a5f13d53_0bb8_11e6_80ce_003048c9267d_c4fafc44_27fc_11e6_80d1_003048c9267d.jpeg" alt="">
+                    <div class="section_action__item--text">
+                        <h3>6-Брусчатка неокрашенная 196x97x60</h3>
+                    </div>
+                    <div class="section_action__item--info">
+                        <div class="section_action__item--status">
+                            <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="#3da35a"/>
+                              </svg> В наличии
+                        </div>
+
+                        <div class="section_action__item--price">
+                            <span class="section_action__item--priceProcent">-15%</span>
+                            <p class="section_action__item--priceOld">
+                                870 ₽/м2
+                            </p>
+                            <p class="section_action__item--priceNew">
+                                570 ₽/м2
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="section_action__item--btn">
+                        <button class="section_action__item--oneClick">Купить в 1 клик</button>
+                        <button class="section_action__item--cart"><img src="../img/cart_item.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="section_action__item">
+                    <img src="https://slavdom.ru/upload/resize_cache/iblock/428/tahxk6ipmkeval5ww9ggtqahn0v10awg/262_163_1/a5f13d53_0bb8_11e6_80ce_003048c9267d_c4fafc44_27fc_11e6_80d1_003048c9267d.jpeg" alt="">
+                    <div class="section_action__item--text">
+                        <h3>6-Брусчатка неокрашенная 196x97x60</h3>
+                    </div>
+                    <div class="section_action__item--info">
+                        <div class="section_action__item--status">
+                            <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="#3da35a"/>
+                              </svg> В наличии
+                        </div>
+
+                        <div class="section_action__item--price">
+                            <span class="section_action__item--priceProcent">-15%</span>
+                            <p class="section_action__item--priceOld">
+                                870 ₽/м2
+                            </p>
+                            <p class="section_action__item--priceNew">
+                                570 ₽/м2
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="section_action__item--btn">
+                        <button class="section_action__item--oneClick">Купить в 1 клик</button>
+                        <button class="section_action__item--cart"><img src="../img/cart_item.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="section_action__item">
+                    <img src="https://slavdom.ru/upload/resize_cache/iblock/428/tahxk6ipmkeval5ww9ggtqahn0v10awg/262_163_1/a5f13d53_0bb8_11e6_80ce_003048c9267d_c4fafc44_27fc_11e6_80d1_003048c9267d.jpeg" alt="">
+                    <div class="section_action__item--text">
+                        <h3>6-Брусчатка неокрашенная 196x97x60</h3>
+                    </div>
+                    <div class="section_action__item--info">
+                        <div class="section_action__item--status">
+                            <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="#3da35a"/>
+                              </svg> В наличии
+                        </div>
+
+                        <div class="section_action__item--price">
+                            <span class="section_action__item--priceProcent">-15%</span>
+                            <p class="section_action__item--priceOld">
+                                870 ₽/м2
+                            </p>
+                            <p class="section_action__item--priceNew">
+                                570 ₽/м2
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="section_action__item--btn">
+                        <button class="section_action__item--oneClick">Купить в 1 клик</button>
+                        <button class="section_action__item--cart"><img src="../img/cart_item.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="section_action__item">
+                    <img src="https://slavdom.ru/upload/resize_cache/iblock/428/tahxk6ipmkeval5ww9ggtqahn0v10awg/262_163_1/a5f13d53_0bb8_11e6_80ce_003048c9267d_c4fafc44_27fc_11e6_80d1_003048c9267d.jpeg" alt="">
+                    <div class="section_action__item--text">
+                        <h3>6-Брусчатка неокрашенная 196x97x60</h3>
+                    </div>
+                    <div class="section_action__item--info">
+                        <div class="section_action__item--status">
+                            <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="#3da35a"/>
+                              </svg> В наличии
+                        </div>
+
+                        <div class="section_action__item--price">
+                            <span class="section_action__item--priceProcent">-15%</span>
+                            <p class="section_action__item--priceOld">
+                                870 ₽/м2
+                            </p>
+                            <p class="section_action__item--priceNew">
+                                570 ₽/м2
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="section_action__item--btn">
+                        <button class="section_action__item--oneClick">Купить в 1 клик</button>
+                        <button class="section_action__item--cart"><img src="../img/cart_item.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="section_action__item">
+                    <img src="https://slavdom.ru/upload/resize_cache/iblock/428/tahxk6ipmkeval5ww9ggtqahn0v10awg/262_163_1/a5f13d53_0bb8_11e6_80ce_003048c9267d_c4fafc44_27fc_11e6_80d1_003048c9267d.jpeg" alt="">
+                    <div class="section_action__item--text">
+                        <h3>6-Брусчатка неокрашенная 196x97x60</h3>
+                    </div>
+                    <div class="section_action__item--info">
+                        <div class="section_action__item--status">
+                            <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="#3da35a"/>
+                              </svg> В наличии
+                        </div>
+
+                        <div class="section_action__item--price">
+                            <span class="section_action__item--priceProcent">-15%</span>
+                            <p class="section_action__item--priceOld">
+                                870 ₽/м2
+                            </p>
+                            <p class="section_action__item--priceNew">
+                                570 ₽/м2
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="section_action__item--btn">
+                        <button class="section_action__item--oneClick">Купить в 1 клик</button>
+                        <button class="section_action__item--cart"><img src="../img/cart_item.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="section_action__item">
+                    <img src="https://slavdom.ru/upload/resize_cache/iblock/428/tahxk6ipmkeval5ww9ggtqahn0v10awg/262_163_1/a5f13d53_0bb8_11e6_80ce_003048c9267d_c4fafc44_27fc_11e6_80d1_003048c9267d.jpeg" alt="">
+                    <div class="section_action__item--text">
+                        <h3>6-Брусчатка неокрашенная 196x97x60</h3>
+                    </div>
+                    <div class="section_action__item--info">
+                        <div class="section_action__item--status">
+                            <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="#3da35a"/>
+                              </svg> В наличии
+                        </div>
+
+                        <div class="section_action__item--price">
+                            <span class="section_action__item--priceProcent">-15%</span>
+                            <p class="section_action__item--priceOld">
+                                870 ₽/м2
+                            </p>
+                            <p class="section_action__item--priceNew">
+                                570 ₽/м2
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="section_action__item--btn">
+                        <button class="section_action__item--oneClick">Купить в 1 клик</button>
+                        <button class="section_action__item--cart"><img src="../img/cart_item.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section_catalog">
+        <div class="container">
+            <h2 class="h2_background"><span>Каталог</span> продукции</h2>
+            <div class="section_catalog__menu">
+                <ul>
+                    <li>
+                        <img src="/img/catalog-1.jpg" alt="">
+                        <p class="active">Тротуарная плитка</p>
+                    </li>
+                    <li>
+                        <img src="/img/catalog-1.jpg" alt="">
+                        <p>Бордюрный камень</p>
+                    </li>
+                    <li>
+                        <img src="/img/catalog-1.jpg" alt="">
+                        <p>Малые архитектурные формы</p>
+                    </li>
+                    <li>
+                        <img src="/img/catalog-1.jpg" alt="">
+                        <p>Торговый дом</p>
+                    </li>
+                </ul>
+                <div class="section_catalog__items">
+                    <div class="section_catalog__item">
+                        <img src="/img/catalog-item-1.jpg" alt="">
+                        <p>Тротуарная плитка "Классико"</p>
+                    </div>
+                    <div class="section_catalog__item">
+                        <img src="/img/catalog-item-1.jpg" alt="">
+                        <p>Тротуарная плитка "Старый город"</p>
+                    </div>
+                    <div class="section_catalog__item">
+                        <img src="/img/catalog-item-1.jpg" alt="">
+                        <p>Тротуарная плиты "Антара"</p>
+                    </div>
+                    <div class="section_catalog__item">
+                        <img src="/img/catalog-item-1.jpg" alt="">
+                        <p>Мультиформатные плиты "Паркет"</p>
+                    </div>
+                    <div class="section_catalog__item">
+                        <img src="/img/catalog-item-1.jpg" alt="">
+                        <p>Тротуарная плитка "Антик"</p>
+                    </div>
+                    <div class="section_catalog__item">
+                        <img src="/img/catalog-item-1.jpg" alt="">
+                        <p>Тротуарная плитка "Паркет"</p>
+                    </div>
+                    <div class="section_catalog__item">
+                        <img src="/img/catalog-item-1.jpg" alt="">
+                        <p>Крупноформатные тротуарные плиты</p>
+                    </div>
+                    <div class="section_catalog__item">
+                        <img src="/img/catalog-item-1.jpg" alt="">
+                        <p>Тротуарная плиты "Квадрат"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="section_project">
+        <div class="section_project__item section_project--background">
+            <h2>Работы с использованием продукции СтройКамень</h2>
+            <a href="">Все проекты</a>
+        </div>
+        <figure class="photo_album_box">
+            <img src="https://www.stroykamen.ru/upload/iblock/179/blagoustr-naber-izh-pruda-1.jpg" />
+            <div class="title">
+                <div>
+                    <h3>Тротуарная плитка</h3>
+                </div>
+            </div>
+            <figcaption>
+                <p>Благоустройство набережной Ижевского пруда</p>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <figure class="photo_album_box">
+            <img src="https://www.stroykamen.ru/upload/iblock/179/blagoustr-naber-izh-pruda-1.jpg" />
+            <div class="title">
+                <div>
+                    <h3>Тротуарная плитка</h3>
+                </div>
+            </div>
+            <figcaption>
+                <p>Благоустройство набережной Ижевского пруда</p>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <figure class="photo_album_box">
+            <img src="https://www.stroykamen.ru/upload/iblock/179/blagoustr-naber-izh-pruda-1.jpg" />
+            <div class="title">
+                <div>
+                    <h3>Тротуарная плитка</h3>
+                </div>
+            </div>
+            <figcaption>
+                <p>Благоустройство набережной Ижевского пруда</p>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <figure class="photo_album_box">
+            <img src="https://www.stroykamen.ru/upload/iblock/179/blagoustr-naber-izh-pruda-1.jpg" />
+            <div class="title">
+                <div>
+                    <h3>Тротуарная плитка</h3>
+                </div>
+            </div>
+            <figcaption>
+                <p>Благоустройство набережной Ижевского пруда</p>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <figure class="photo_album_box">
+            <img src="https://www.stroykamen.ru/upload/iblock/179/blagoustr-naber-izh-pruda-1.jpg" />
+            <div class="title">
+                <div>
+                    <h3>Тротуарная плитка</h3>
+                </div>
+            </div>
+            <figcaption>
+                <p>Благоустройство набережной Ижевского пруда</p>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <figure class="photo_album_box">
+            <img src="https://www.stroykamen.ru/upload/iblock/179/blagoustr-naber-izh-pruda-1.jpg" />
+            <div class="title">
+                <div>
+                    <h3>Тротуарная плитка</h3>
+                </div>
+            </div>
+            <figcaption>
+                <p>Благоустройство набережной Ижевского пруда</p>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <figure class="photo_album_box">
+            <img src="https://www.stroykamen.ru/upload/iblock/179/blagoustr-naber-izh-pruda-1.jpg" />
+            <div class="title">
+                <div>
+                    <h3>Тротуарная плитка</h3>
+                </div>
+            </div>
+            <figcaption>
+                <p>Благоустройство набережной Ижевского пруда</p>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <figure class="photo_album_box">
+            <img src="https://www.stroykamen.ru/upload/iblock/179/blagoustr-naber-izh-pruda-1.jpg" />
+            <div class="title">
+                <div>
+                    <h3>Тротуарная плитка</h3>
+                </div>
+            </div>
+            <figcaption>
+                <p>Благоустройство набережной Ижевского пруда</p>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+        <figure class="photo_album_box">
+            <img src="https://www.stroykamen.ru/upload/iblock/179/blagoustr-naber-izh-pruda-1.jpg" />
+            <div class="title">
+                <div>
+                    <h3>Тротуарная плитка</h3>
+                </div>
+            </div>
+            <figcaption>
+                <p>Благоустройство набережной Ижевского пруда</p>
+            </figcaption>
+            <a href="#"></a>
+        </figure>
+    </div>
+
+
+
+
+    <div class="section_video">
+        <div class="container">
+            <div class="section_video__text">
+                <h2 class="h2_background"><span>Видео подборка</span>наших работ в коротком видео</h2>
+                <a class="btn-11" href="#">Пример</a>
+                <!-- <a class="btn-6" href="#">пример<span></span></a>
+                <a class="btn-8" href="javascript:void(0)">
+                    <span>Пример</span>
+                    <div class="wave"></div>
+                </a> -->
+            </div>
+            <div class="section_video__obj">
+                <img class="section_video__img" src="https://www.stroykamen.ru/upload/medialibrary/06a/330_original.jpg" alt="">
+                <div class="section_video--play">
+                    <img src="/img/play.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section_news">
+        <div class="section_news__useful">
+            <h2 class="h2_background"><span>Полезная</span>информация</h2>
+            <div class="section_news__info">
+                <div class="section_news__info--item">
+                    <a href="">
+                        <img src="https://www.stroykamen.ru/upload/iblock/dee/6j1u6sitlrgj8e7ojsjjhvyaqe2cqxu8/nvhEZpQwTZ4.jpg" alt="">
+                        <h3>Как продлить внешний вид тротуарной плитки</h3>
+                    </a>
+                </div>
+                <div class="section_news__info--item">
+                    <a href="">
+                        <img src="https://www.stroykamen.ru/upload/iblock/b6e/f56nf835a76tob0o087f6j130xjkceed/OkA9PSbQu-Q.jpg" alt="">
+                        <h3>Цвет - это настоящая магия, читай подробней</h3>
+                    </a>
+                </div>
+                <div class="section_news__info--item">
+                    <a href="">
+                        <img src="https://www.stroykamen.ru/upload/iblock/483/dseagh1o6hrmb1k8vti9yx3qq7d1fs4h/weHY7f4aTTk.jpg" alt="">
+                        <h3>Из чего мы делаем нашу плитку</h3>
+                    </a>
+                </div>
+                <div class="section_news__info--item">
+                    <a href="">
+                        <img src="https://www.stroykamen.ru/upload/iblock/db9/yu8clss3nhdxc905wb9rx5t6vp5p3kvy/FKhZRy2ZzCs.jpg" alt="">
+                        <h3>Методы ухода без химии+бонус</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section_news__new">
+            <h2>Новости</h2>
+            <div class="section_news__list">
+                <div class="section_news__list--item">
+                    <img src="" alt="">
+                    <div class="section_news__list--info">
+                        <h3>Заголовок</h3>
+                        <p>Наконец то мв запустидли новую линьйку продуктов Наконец то решили сделать редизайн сайта и так далее Улучаем продумывая дизайн бла бла бла. </p>
+                        <a href="">Читать далее</a>
+                    </div>
+                </div>
+                <div class="section_news__list--item">
+                    <img src="" alt="">
+                    <div class="section_news__list--info">
+                        <h3>Заголовок</h3>
+                        <p>Наконец то мв запустидли новую линьйку продуктов Наконец то решили сделать редизайн сайта и так далее Улучаем продумывая дизайн бла бла бла. </p>
+                        <a href="">Читать далее</a>
+                    </div>
+                </div>
+                <div class="section_news__list--item">
+                    <img src="" alt="">
+                    <div class="section_news__list--info">
+                        <h3>Заголовок</h3>
+                        <p>Наконец то мв запустидли новую линьйку продуктов Наконец то решили сделать редизайн сайта и так далее Улучаем продумывая дизайн бла бла бла. </p>
+                        <a href="">Читать далее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="section_application">
+        <div class="container">
+            <h2 class="h2_background"><span>Применение</span>нашей продукции</h2>
+            <div class="section_application__items">
+                <div class="section_application__item">
+                    <img src="/img/app.jpg" alt="">
+                    <div class="section_application__item--bottom">
+                        <h3>Интерьеры</h3>
+                        <a href="">157 объектов ></a>
+                    </div>
+                </div>
+                <div class="section_application__item">
+                    <img src="/img/app.jpg" alt="">
+                    <div class="section_application__item--bottom">
+                        <h3>Интерьеры</h3>
+                        <a href="">157 объектов ></a>
+                    </div>
+                </div>
+                <div class="section_application__item">
+                    <img src="/img/app.jpg" alt="">
+                    <div class="section_application__item--bottom">
+                        <h3>Интерьеры</h3>
+                        <a href="">157 объектов ></a>
+                    </div>
+                </div>
+                <div class="section_application__item">
+                    <img src="/img/app.jpg" alt="">
+                    <div class="section_application__item--bottom">
+                        <h3>Интерьеры</h3>
+                        <a href="">157 объектов ></a>
+                    </div>
+                </div>
+                <div class="section_application__item">
+                    <img src="/img/app.jpg" alt="">
+                    <div class="section_application__item--bottom">
+                        <h3>Интерьеры</h3>
+                        <a href="">157 объектов ></a>
+                    </div>
+                </div>
+                <div class="section_application__item">
+                    <img src="/img/app.jpg" alt="">
+                    <div class="section_application__item--bottom">
+                        <h3>Интерьеры</h3>
+                        <a href="">157 объектов ></a>
+                    </div>
+                </div>
+                <div class="section_application__item">
+                    <img src="/img/app.jpg" alt="">
+                    <div class="section_application__item--bottom">
+                        <h3>Интерьеры</h3>
+                        <a href="">157 объектов ></a>
+                    </div>
+                </div>
+                <div class="section_application__item">
+                    <img src="/img/app.jpg" alt="">
+                    <div class="section_application__item--bottom">
+                        <h3>Интерьеры</h3>
+                        <a href="">157 объектов ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="section_contactIndex">
+        <div id="section_contactIndex--map" style="width:100%;height:400px"></div>
+        <div class="container">
+            <div class="section_contactIndex--office">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="section_contactIndex--officeItem">
+                                <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_2_b.jpg" alt="">
+                                <div class="section_contactIndex--officeText">
+                                    <h3>Офис продаж Ижевского завода кирпича и керамзита</h3>
+                                    <div class="section_contactIndex--officeLine">
+                                        <p>Телефон</p>
+                                        <p>
+                                            <a href="tel:+73412771540">77-15-40</a>
+                                        </p>
+                                    </div>
+                                    <div class="section_contactIndex--officeLine">
+                                        <p>Адрес</p>
+                                        <p>
+                                            г. Ижевск, ул. О. Кошевого, 2
+                                        </p>
+                                    </div>
+                                    <div class="section_contactIndex--officeLine">
+                                        <p>График работы</p>
+                                        <p>
+                                            Пн-Пт: с 8:00 до 17:00<br> Сб-Вс: выходной<br> Без перерыва на обед
+                                        </p>
+                                    </div>
+                                    <div class="section_contactIndex--officeLine section_contactIndex--end">
+                                        <a class="section_contactIndex--officeLine__shema" href=""><img src="../img/scheme.png" alt=""> Схема проезда</a>
+                                        <a class="section_contactIndex--officeLine__link" href="">Подробнее о шоу-руме</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="section_contactIndex--officeItem">
+                                <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_3_b.jpg" alt="">
+                                <div class="section_contactIndex--officeText">
+                                    <h3>ТЦ "Азбука ремонта" (1 этаж, отдел 120 А)</h3>
+                                    <div class="section_contactIndex--officeLine">
+                                        <p>Телефон</p>
+                                        <p>
+                                            <a href="tel:+79225002865">+7 (922) 500-28-65</a>
+                                        </p>
+                                    </div>
+                                    <div class="section_contactIndex--officeLine">
+                                        <p>Адрес</p>
+                                        <p>
+                                            г. Ижевск, ул. Молодежная, 107 Б
+                                        </p>
+                                    </div>
+                                    <div class="section_contactIndex--officeLine">
+                                        <p>График работы</p>
+                                        <p>
+                                            Пн-Пт: с 8:00 до 17:00<br> Сб-Вс: выходной<br> Без перерыва на обед
+                                        </p>
+                                    </div>
+                                    <div class="section_contactIndex--officeLine section_contactIndex--end">
+                                        <a class="section_contactIndex--officeLine__shema" href=""><img src="../img/scheme.png" alt=""> Схема проезда</a>
+                                        <a class="section_contactIndex--officeLine__link" href="">Подробнее о шоу-руме</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="section_contactIndex--officeItem">
+                                <img src="https://www.izkm.ru/sites/all/themes/izkm/img/back-f.jpg" alt="">
+                                <div class="section_contactIndex--officeText">
+                                    <h3>Офис продаж завода "Альтаир"</h3>
+                                    <div class="section_contactIndex--officeLine">
+                                        <p>Телефон</p>
+                                        <p>
+                                            <a href="tel:+79225002865">+7 (922) 500-28-65</a>
+                                        </p>
+                                    </div>
+                                    <div class="section_contactIndex--officeLine">
+                                        <p>Адрес</p>
+                                        <p>
+                                            г. Ижевск, ул. Воткинское шоссе, 31
+                                        </p>
+                                    </div>
+                                    <div class="section_contactIndex--officeLine">
+                                        <p>График работы</p>
+                                        <p>
+                                            Пн-Пт: с 8:00 до 17:00<br> Сб-Вс: выходной<br> Без перерыва на обед
+                                        </p>
+                                    </div>
+                                    <div class="section_contactIndex--officeLine section_contactIndex--end">
+                                        <a class="section_contactIndex--officeLine__shema" href=""><img src="../img/scheme.png" alt=""> Схема проезда</a>
+                                        <a class="section_contactIndex--officeLine__link" href="">Подробнее о шоу-руме</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__logo">
+                <img src="/img/logo.svg" alt="">
+            </div>
+            <div class="footer__adress">
+                <div class="footer__adress--box footer__adress--phone fl-align">
+                    <img src="/img/phone-call.png" alt="">
+                    <a href="tel:+73412771795">77-17-95</a>
+                </div>
+                <button data-zvonok>Обратный звонок</button>
+                <div class="footer__adress--box fl-align">
+                    <img src="/img/mail.png" alt="">
+                    <a href="mailto:zavod_ecoblock@mail.ru">zavod_ecoblock@mail.ru</a>
+                </div>
+                <div class="footer__adress--box">
+                    <img src="/img/adress-white.png" alt="">
+                    <p>г. Ижевск, ул. Олега Кошевого, 2</p>
+                </div>
+            </div>
+            <div class="footer__menu">
+                <ul>
+                    <li class="footer__title">О компании</li>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Гарантия</a></li>
+                    <li><a href="">Реквизиты</a></li>
+                    <li><a href="">Вакансии</a></li>
+                </ul>
+                <ul>
+                    <li class="footer__title">Продукция</li>
+                    <li><a href="">Тротуарная плитка и брусчатка</a></li>
+                    <li><a href="">Стеновые блоки</a></li>
+                    <li><a href="">Декоративные камни</a></li>
+                    <li><a href="">Бордюры</a></li>
+                    <li><a href="">Вентиляционные блоки</a></li>
+                    <li><a href="">Ограничитель парковки</a></li>
+                    <li><a href="">Укладка брусчатки</a></li>
+                </ul>
+                <ul>
+                    <li class="footer__title">Покупателем</li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Вопрос-ответ</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Статьи</a></li>
+                    <li><a href="">Благоустройство,укладка брусчатки</a></li>
+                </ul>
+
+            </div>
+            <div class="footer__vidget">
+                <div class="footer__vidget--mess">
+                    <p>Мы в соцсетях</p>
+                    <ul>
+                        <li>
+                            <img src="/img/vk.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/img/instagram.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <a href="">Обратная связь</a>
+                <a href="">Письмо директору</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=9f2c8c4d-5788-4c89-8b3e-49139b3f1988&lang=ru_RU" type="text/javascript"></script>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script>
+        document.querySelector('.header_bottom__btnCatalog').addEventListener('mouseover', function(e) {
+            document.querySelector('.header_bottom__menu').classList.add('active');
+            document.querySelector('.background_overlay').style.display = 'flex';
+        });
+
+        document.querySelector('.header_bottom__btnCatalog').addEventListener('mouseout', function(e) {
+            document.querySelector('.header_bottom__menu').classList.remove('active');
+            document.querySelector('.background_overlay').style = null;
+        });
+
+        document.querySelector('.header__calBuy').addEventListener('mouseover', function(e) {
+            this.classList.add('active');
+            document.querySelector('.background_overlay').style.display = 'flex';
+        });
+
+        document.querySelector('.header__calBuy').addEventListener('mouseout', function(e) {
+            this.classList.remove('active');
+            document.querySelector('.background_overlay').style = null;
+        });
+
+        ymaps.ready(init);
+
+        function init() {
+            // Создание карты.
+            var myMap = new ymaps.Map("section_contactIndex--map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [56.8497600, 53.20448],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 10,
+                controls: []
+            });
+
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                ),
+
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                    hintContent: 'Офис продаж Ижевского завода керамических материалов',
+                    balloonContentBody: [
+                        '<div style="display: flex;padding:10px"><img style="width:53px;height:100px;margin-right:5px" src="https://www.izkm.ru/sites/all/themes/izkm/img/logo.png"><div>',
+                        '<strong>Офис продаж Ижевского завода кирпича и керамзита</strong>',
+                        '<div style="color:#949c93;margin:10px 0;display:flex;align-items:center"><img src="/img/map_adress.png" style="width:15px;margin-right:11px"> <div>г. Ижевск, ул. О. Кошевого, 2</div></div>',
+                        '<div style="color:#949c93;margin:10px 0;display:flex;align-items:center"><img src="/img/time.png" style="width:12px;margin-right: 11px;"><div> Пн-Пт с 8:00 до 17:00<br>Сб-Вс: выходной</div></div>',
+                        '<div style="color:#949c93;margin:10px 0;display:flex;align-items:center"><img src="/img/call.png" style="width:12px;margin-right: 11px;"><div> <a style="color:var(--color-green);font-weight:bold" href="tel:+73412771795">+7 (3412) 77-17-95</a> </div></div>',
+                        'Подробнее: <a href="https://izkm.ru/" target="_blank" style="color:var(--color-green);font-weight:bold">izkm.ru</a>',
+                        '</div></div>'
+                    ].join('')
+                }, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: 'img/home.png',
+                    // Размеры метки.
+                    iconImageSize: [50, 50],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-5, -38]
+                }),
+
+
+                myPlacemarkAzbuka = new ymaps.Placemark([56.854147036879155, 53.29328731358773], {
+                    hintContent: 'ТЦ «АЗБУКА РЕМОНТА» офис 120А',
+                    balloonContentBody: [
+                        '<div style="display: flex;padding:10px"><img style="width:102px;height:fit-content;margin-right:11px" src="https://www.izkm.ru/sites/all/themes/izkm/img/logo-ar.png"><div>',
+                        '<strong>Офис продаж завода керамических материалов "Альтаир</strong>',
+                        '<div style="color:#949c93;margin:10px 0;display:flex;align-items:center"><img src="/img/map_adress.png" style="width:15px;margin-right:11px"> <div>г. Ижевск, ул. Молодежная, 107 Б</div></div>',
+                        '<div style="color:#949c93;margin:10px 0;display:flex;align-items:center"><img src="/img/time.png" style="width:12px;margin-right: 11px;"><div> Пн-Пт с 7:00 до 17:00</div></div>',
+                        '<div style="color:#949c93;margin:10px 0;display:flex;align-items:center"><img src="/img/call.png" style="width:12px;margin-right: 11px;"><div> <a style="color:var(--color-green);font-weight:bold" href="tel:+79226903240">+7 (922) 690-32-40</a> </div></div>',
+                        '</div></div>'
+                    ].join('')
+                }, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: 'img/home.png',
+                    // Размеры метки.
+                    iconImageSize: [50, 50],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-5, -38]
+                }),
+
+
+                myPlacemarkAltair = new ymaps.Placemark([56.89426065033196, 53.24128532523484], {
+                    hintContent: 'Офис продаж завода керамических материалов "Альтаир"',
+                    balloonContentBody: [
+                        '<div style="display: flex;padding:10px"><img style="width:73px;height:fit-content;margin-right:11px" src="https://zsm-altair.ru/sites/all/themes/izkm/img/alt_logo.png"><div>',
+                        '<strong>Офис продаж завода керамических материалов "Альтаир</strong>',
+                        '<div style="color:#949c93;margin:10px 0;display:flex;align-items:center"><img src="/img/map_adress.png" style="width:15px;margin-right:11px"> <div>г. Ижевск, ул. Воткинское шоссе, 31</div></div>',
+                        '<div style="color:#949c93;margin:10px 0;display:flex;align-items:center"><img src="/img/time.png" style="width:12px;margin-right: 11px;"><div> Пн-Пт с 8:00 до 17:00<br>Сб-Вс: выходной</div></div>',
+                        '<div style="color:#949c93;margin:10px 0;display:flex;align-items:center"><img src="/img/call.png" style="width:12px;margin-right: 11px;"><div> <a style="color:var(--color-green);font-weight:bold" href="tel:+73412998700">+ 7 (3412) 99-87-00</a> </div></div>',
+                        'Подробнее: <a href="https://zsm-altair.ru" target="_blank" style="color:var(--color-green);font-weight:bold">zsm-altair.ru</a>',
+                        '</div></div>'
+                    ].join('')
+                }, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: 'img/home.png',
+                    // Размеры метки.
+                    iconImageSize: [50, 50],
+                    // Смещение левого верхнего угла иконки относительно
+                    // её "ножки" (точки привязки).
+                    iconImageOffset: [-5, -38]
+                }),
+
+
+
+
+                myMap.geoObjects
+                .add(myPlacemark)
+                .add(myPlacemarkAzbuka)
+                .add(myPlacemarkAltair);
+
+
+
+        }
+
+        document.querySelector('.header_logo').classList.add('active');
+        setTimeout(() => {
+
+            document.querySelector('.header_bottom').classList.remove('overflow');
+        }, 300);
+
+
+        const swiper_office_1 = new Swiper('.section_contactIndex--1 .swiper', {
+            effect: "creative",
+            direction: 'vertical',
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: [0, -400, 0],
+                },
+                next: {
+                    translate: [0, 400, 0],
+                },
+            },
+            speed: 1000,
+
+            navigation: {
+                nextEl: '.section_contactIndex--1 .swiper-button-next',
+                prevEl: '.section_contactIndex--1 .swiper-button-prev',
+            },
+        });
+
+        const swiper_office_2 = new Swiper('.section_contactIndex--2 .swiper', {
+            effect: "creative",
+            direction: 'vertical',
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: [0, -400, 0],
+                },
+                next: {
+                    translate: [0, 400, 0],
+                },
+            },
+            speed: 1000,
+
+            navigation: {
+                nextEl: '.section_contactIndex--2 .swiper-button-next',
+                prevEl: '.section_contactIndex--2 .swiper-button-prev',
+            },
+        });
+
+        const swiper_office_3 = new Swiper('.section_contactIndex--3 .swiper', {
+            effect: "creative",
+            direction: 'vertical',
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: [0, -400, 0],
+                },
+                next: {
+                    translate: [0, 400, 0],
+                },
+            },
+            speed: 1000,
+
+            navigation: {
+                nextEl: '.section_contactIndex--3 .swiper-button-next',
+                prevEl: '.section_contactIndex--3 .swiper-button-prev',
+            },
+        });
+
+        const swiper_right = new Swiper('.section_info__page .swiper', {
+            effect: "creative",
+            direction: 'vertical',
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: [0, -400, 0],
+                },
+                next: {
+                    translate: [0, 400, 0],
+                },
+            },
+            speed: 1000,
+
+            // If we need pagination
+            // pagination: {
+            //     el: ".section_info__page .swiper-pagination",
+            //     type: "progressbar",
+            // },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.section_info__page .swiper-button-next',
+                prevEl: '.section_info__page .swiper-button-prev',
+            },
+
+            // on: {
+            //     slideChangeTransitionEnd: function(e) {
+            //         e.$el[0].querySelector('.section_info__page .swiper-slide-active p').classList.add('active')
+            //     },
+            //     afterInit: function(e) {
+            //         e.$el[0].querySelector('.section_info__page .swiper-slide-active p').classList.add('active')
+            //     }
+            // }
+        });
+        const swiper_slider = new Swiper('.section_info__slider .swiper', {
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: [0, 0, -400],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+            speed: 1000,
+
+            // If we need pagination
+            pagination: {
+                el: ".section_info__slider .swiper-pagination",
+                type: "progressbar",
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.section_info__slider .swiper-button-next',
+                prevEl: '.section_info__slider .swiper-button-prev',
+            },
+
+            on: {
+                slideChangeTransitionEnd: function(e) {
+                    e.$el[0].querySelector('.section_info__slider .swiper-slide-active p').classList.add('active')
+                },
+                afterInit: function(e) {
+                    e.$el[0].querySelector('.section_info__slider .swiper-slide-active p').classList.add('active')
+                }
+            }
+        });
+
+
+        const swiper_office = new Swiper('.section_contactIndex .swiper', {
+            effect: "creative",
+            direction: 'vertical',
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: [0, -400, 0],
+                },
+                next: {
+                    translate: [0, 400, 0],
+                },
+            },
+            speed: 1000,
+
+            // If we need pagination
+            // pagination: {
+            //     el: ".section_info__page .swiper-pagination",
+            //     type: "progressbar",
+            // },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.section_contactIndex .swiper-button-next',
+                prevEl: '.section_contactIndex .swiper-button-prev',
+            },
+        });
+
+        // document.querySelector('#menu-toggle').addEventListener('click', function(e) {
+        //     if (!this.classList.contains('open')) {
+        //         this.classList.add('open');
+        //         this.closest('header').classList.add('open_header');
+        //         e.target.closest('.block_header').querySelector('.block_header__menu').style.height = 'auto';
+        //         let height = e.target.closest('.block_header').querySelector('.block_header__menu').offsetHeight;
+        //         let height_img = e.target.closest('.block_header').querySelector('.block_header__mobMenu').offsetHeight;
+        //         e.target.closest('.block_header').querySelector('.block_header__menu').style = null;
+        //         let sum_height = (e.target.closest('.block_header').offsetHeight / 2) + height;
+        //         e.target.closest('header').style.height = sum_height + 'px';
+        //         e.target.closest('.block_header').style.height = sum_height + 'px';
+        //     } else {
+        //         this.classList.remove('open');
+        //         this.closest('header').classList.remove('open_header');
+        //         e.target.closest('.block_header').style.height = null;
+        //         e.target.closest('header').style = null;
+        //     }
+        // });
+        // document.querySelector('.btn-6').addEventListener('mouseenter', function(e) {
+        //     let relX = e.layerX,
+        //         relY = e.layerY;
+        //     this.querySelector('span').style.cssText = `
+        //         top: ${relY}px;
+        //         left: ${relX}px;
+        //     `;
+        // });
+    </script>
+</body>
+
+</html>
