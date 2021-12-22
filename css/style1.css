@@ -3157,8 +3157,8 @@ figure.photo_album_box.hover figcaption {
 
 @font-face {
   font-family: "MyriadPRO";
-  src: url("../fonts/MyriadPro-Light.OTF");
-  src: url("../fonts/MyriadPro-Light.OTF") format("OpenType");
+  src: url("../fonts/MyriadPro-Light.otf");
+  src: url("../fonts/MyriadPro-Light.otf") format("OpenType");
   font-weight: 400;
 }
 
