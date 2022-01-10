@@ -2894,8 +2894,8 @@ figure.photo_album_box.hover figcaption {
 .section_contact .tabs_box__element--block[data-block="contact"] > .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px;
   margin-top: 50px;
 }
