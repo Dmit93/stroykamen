@@ -598,7 +598,7 @@ header .header_bottom__btnCatalog:hover span:first-child {
   }
   header {
     background: var(--color-black);
-    padding: 30px 0;
+    padding: 15px 0 30px 0;
   }
 }
 
@@ -1003,6 +1003,17 @@ header.header_overflow {
   width: 1px;
 }
 
+.block_header__mobMenu > div:first-child {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 13px;
+  margin-right: 0;
+}
+
+.block_header__mobMenu > div:first-child img {
+  width: 100px;
+}
+
 .block_header__mobLogo {
   margin-bottom: 25px;
   height: 105px;
@@ -1080,6 +1091,8 @@ header.header_overflow {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -2843,10 +2856,12 @@ figure.photo_album_box.hover figcaption {
   color: #000;
 }
 
+.section_contact {
+  margin-top: 70px;
+}
+
 .section_contact h1 {
-  text-align: left;
-  margin-left: 8%;
-  font-size: 30px;
+  text-align: center;
 }
 
 .section_contact .tabs {
@@ -2879,8 +2894,8 @@ figure.photo_album_box.hover figcaption {
 .section_contact .tabs_box__element--block[data-block="contact"] > .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   grid-gap: 30px;
   margin-top: 50px;
 }
@@ -2929,13 +2944,11 @@ figure.photo_album_box.hover figcaption {
 }
 
 .section_contact .tabs_box__element--block[data-block="otdel"] .container .tabs_box__element--photo {
-  width: 90px;
-  height: 90px;
+  width: 100%;
+  height: 250px;
   background: var(--color-black);
-  position: absolute;
-  bottom: -12px;
-  right: -18px;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .section_contact .tabs_box__element--block[data-block="otdel"] .container .tabs_box__element--photo img {
@@ -3011,6 +3024,7 @@ figure.photo_album_box.hover figcaption {
 .section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container {
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
+  width: 60%;
 }
 
 .section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container .tabs_box__element--ofs {
@@ -3019,6 +3033,7 @@ figure.photo_album_box.hover figcaption {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 46px;
+  width: 100%;
 }
 
 .section_contact .tabs_box__element--block[data-block="proizvodstvo"] .container .tabs_box__element--ofsBox {
