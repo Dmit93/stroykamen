@@ -1,3 +1,5 @@
+document.querySelector('.header_logo').classList.add('active');
+
 document.querySelector('.header_bottom__btnCatalog').addEventListener('mouseover', function(e) {
     document.querySelector('.header_bottom__menu').classList.add('active');
     document.querySelector('.background_overlay').style.display = 'flex';
