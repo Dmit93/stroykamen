@@ -196,15 +196,27 @@
   position: static;
 }
 
+.item_page_wrapper {
+  margin-top: 60px;
+}
+
 .item_page_wrapper__box {
-  margin-left: 122px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 119px;
+}
+
+.item_page_wrapper .breadcrumbs {
+  margin-top: 0;
+}
+
+.item_page_wrapper .breadcrumbs ul {
+  margin-left: 0;
 }
 
 .item_page_wrapper h1 {
-  margin: 20px 0 40px 122px;
+  margin: 20px 0 40px 0;
 }
 
 .item_page_wrapper__text, .item_page_wrapper__img {
@@ -213,6 +225,13 @@
 
 .item_page_wrapper__img {
   margin-right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .item_page_wrapper__img img {
@@ -223,12 +242,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
 }
 
 .item_page_wrapper__img-list img {
   width: 80px;
-  margin-right: 10px;
+  margin-bottom: 10px;
   opacity: .6;
   -webkit-transition: .3s ease;
   transition: .3s ease;
@@ -239,7 +262,7 @@
 }
 
 .item_page_wrapper__text-params {
-  width: 66%;
+  width: 100%;
 }
 
 .item_page_wrapper__text-params-line {
@@ -285,7 +308,35 @@
 .item_page_wrapper__text-price {
   font-size: 29px;
   font-weight: bold;
-  margin: 30px 0;
+  margin: 0 0 30px 0;
+}
+
+.item_page_wrapper__text-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item_page_wrapper__text-colors ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-left: 20px;
+}
+
+.item_page_wrapper__text-colors ul li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.item_page_wrapper__text-colors ul li span {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.item_page_wrapper__text-ndprice {
+  margin-top: 35px;
 }
 
 .item_page_wrapper__text-col {
@@ -373,13 +424,14 @@
 }
 
 .item_page_wrapper__bottom {
-  margin: 40px 0 80px 122px;
+  margin: 80px 0 80px 0;
 }
 
 .item_page_wrapper__bottom-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
   list-style: none;
   border-bottom: 3px solid #ececec;
   margin-bottom: 40px;
@@ -393,6 +445,24 @@
 .item_page_wrapper__bottom-list li {
   font-size: 18px;
   color: #828181;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.item_page_wrapper__bottom-list li:after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  height: 2px;
+  border-bottom: 3px solid var(--color-green);
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
 }
 
 .item_page_wrapper__bottom-list li.active {
@@ -402,12 +472,54 @@
 }
 
 .item_page_wrapper__bottom-list li.active:after {
-  content: '';
-  position: absolute;
-  bottom: -12px;
-  left: 0;
   width: 100%;
-  height: 2px;
-  border-bottom: 3px solid var(--color-green);
+  opacity: 1;
+}
+
+.item_page_wrapper__bottom-info-tab {
+  display: none;
+}
+
+.item_page_wrapper__bottom-info-tab.active {
+  display: block;
+}
+
+.item_page_wrapper__bottom-info-tab.active.info-tab-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.item_page_wrapper__bottom-info-tab.info-tab-grid {
+  display: none;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px 0;
+}
+
+.item_page_wrapper__bottom-info-tab h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.item_page_wrapper__bottom-info-tab p {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.section_razmer-plitki h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section_razmer-plitki__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 40px;
+}
+
+.section_razmer-plitki__container img {
+  width: 100%;
 }
 /*# sourceMappingURL=style_catalog.css.map */
