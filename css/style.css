@@ -3798,6 +3798,7 @@ figure.photo_album_box.hover figcaption {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   width: 100%;
+  grid-gap: 0 3px;
   position: relative;
 }
 
