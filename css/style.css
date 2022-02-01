@@ -641,6 +641,22 @@ header .header_bottom__search img {
   outline: none;
 }
 
+.header_search_div input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.header_search_div input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.header_search_div input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.header_search_div input::placeholder {
+  color: #fff;
+}
+
 #menu-toggle {
   width: 40px;
   height: 30px;
