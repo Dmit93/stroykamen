@@ -642,19 +642,19 @@ header .header_bottom__search img {
 }
 
 .header_search_div input::-webkit-input-placeholder {
-  color: #fff;
+  color: #b4b4b4;
 }
 
 .header_search_div input:-ms-input-placeholder {
-  color: #fff;
+  color: #b4b4b4;
 }
 
 .header_search_div input::-ms-input-placeholder {
-  color: #fff;
+  color: #b4b4b4;
 }
 
 .header_search_div input::placeholder {
-  color: #fff;
+  color: #b4b4b4;
 }
 
 #menu-toggle {
