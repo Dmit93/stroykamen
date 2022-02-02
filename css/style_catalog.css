@@ -143,6 +143,10 @@
   height: 0%;
 }
 
+.secion_catalog_items .section_action__item {
+  display: block;
+}
+
 .select-custom {
   position: relative;
   margin-top: 30px;
