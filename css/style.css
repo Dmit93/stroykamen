@@ -22,7 +22,7 @@ input[type="submit"] {
 }
 
 body {
-  font-family: 'MyriadPRO';
+  font-family: 'GothamPro';
 }
 
 a {
@@ -80,7 +80,8 @@ h1 {
 }
 
 .h2_background {
-  font-size: 35px;
+  font-size: 30px;
+  text-align: left;
 }
 
 .background_overlay {
@@ -149,7 +150,7 @@ header .header_top {
 }
 
 header .header_top .header__calBuy {
-  font-size: 20px;
+  font-size: 17px;
   color: #000;
   font-weight: 500;
   position: relative;
@@ -316,7 +317,7 @@ header .header_top .header__calBuy img {
 }
 
 header .header_top > a {
-  font-size: 20px;
+  font-size: 17px;
   color: #000;
   font-weight: 500;
 }
@@ -327,7 +328,7 @@ header .header_top > a img {
 }
 
 header .header_top > p {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
 }
 
@@ -456,7 +457,7 @@ header .header_bottom .container > ul li:not(:last-child) {
 }
 
 header .header_bottom .container > ul li {
-  font-size: 16px;
+  font-size: 13px;
   text-transform: uppercase;
   position: relative;
   z-index: 9;
@@ -1408,12 +1409,11 @@ header.header_overflow {
 }
 
 .section_action {
-  margin-top: 105px;
+  margin-top: 60px;
 }
 
 .section_action h2 {
   margin-bottom: 31px;
-  text-align: center;
 }
 
 .section_action__items {
@@ -1544,7 +1544,7 @@ header.header_overflow {
 }
 
 .section_action__all-items {
-  margin: 50px auto 0 auto;
+  margin: 30px auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1566,15 +1566,13 @@ header.header_overflow {
 }
 
 .section_catalog {
-  margin-top: 118px;
+  margin-top: 60px;
 }
 
 .section_catalog h2 {
   font-weight: 700;
-  font-size: 36px;
-  text-align: center;
   color: var(--color-black);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .section_catalog__menu ul {
@@ -1666,7 +1664,7 @@ header.header_overflow {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 260px;
-  margin-top: 158px;
+  margin-top: 80px;
 }
 
 .section_project__item {
@@ -1726,7 +1724,7 @@ header.header_overflow {
 }
 
 .section_video {
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
 .section_video .container {
@@ -1981,11 +1979,10 @@ header.header_overflow {
 }
 
 .section_news {
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
 .section_news h2 {
-  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -2107,17 +2104,16 @@ header.header_overflow {
 }
 
 .section_contactIndex {
-  margin: 150px 0 100px;
+  margin: 80px 0 100px;
 }
 
-.section_contactIndex .container {
+.section_contactIndex-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .section_contactIndex h2 {
-  text-align: center;
   margin-bottom: 60px;
 }
 
@@ -2988,7 +2984,7 @@ figure.photo_album_box.hover figcaption {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .section_contact .tabs_box__element--block.active {
@@ -3217,7 +3213,7 @@ figure.photo_album_box.hover figcaption {
 }
 
 .cont_mps {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .section_contact__maps {
@@ -3504,11 +3500,10 @@ figure.photo_album_box.hover figcaption {
 }
 
 .section_our-service {
-  margin-top: 160px;
+  margin-top: 60px;
 }
 
 .section_our-service h2 {
-  text-align: center;
   margin-bottom: 45px;
 }
 
@@ -3650,10 +3645,10 @@ figure.photo_album_box.hover figcaption {
 }
 
 .section_good-production {
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
-.section_good-production .container {
+.section_good-production-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3666,7 +3661,6 @@ figure.photo_album_box.hover figcaption {
 }
 
 .section_good-production h2 {
-  text-align: center;
   margin-bottom: 40px;
 }
 
@@ -3718,7 +3712,7 @@ figure.photo_album_box.hover figcaption {
 }
 
 .section_company {
-  margin-top: 150px;
+  margin-top: 135px;
 }
 
 .section_company h2 {
@@ -3735,8 +3729,8 @@ figure.photo_album_box.hover figcaption {
 }
 
 .section_company__text {
-  width: 30%;
-  margin-right: 50px;
+  width: 40%;
+  margin-right: auto;
 }
 
 .section_company__text p {
@@ -3815,79 +3809,30 @@ figure.photo_album_box.hover figcaption {
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-ExtraLight.ttf");
-  src: url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Light.ttf");
-  src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro-Light.ttf");
+  src: url("../fonts/GothamPro-Light.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf");
-  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro.ttf");
+  src: url("../fonts/GothamPro.ttf") format("truetype");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Medium.ttf");
-  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro-Medium.ttf");
+  src: url("../fonts/GothamPro-Medium.ttf") format("truetype");
   font-weight: 600;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Bold.ttf");
-  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-family: "GothamPro";
+  src: url("../fonts/GothamPro-Bold.ttf");
+  src: url("../fonts/GothamPro-Bold.ttf") format("truetype");
   font-weight: 700;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-SemiBold.ttf");
-  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Franklin";
-  src: url("../fonts/Franklin.ttf");
-  src: url("../fonts/Franklin.ttf") format("truetype");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Franklin";
-  src: url("../fonts/Franklin-medium.ttf");
-  src: url("../fonts/Franklin-medium.ttf") format("truetype");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "MyriadPRO";
-  src: url("../fonts/MyriadPro-Light.otf");
-  src: url("../fonts/MyriadPro-Light.otf") format("OpenType");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "MyriadPRO";
-  src: url("../fonts/MYRIADPRO-REGULAR.OTF");
-  src: url("../fonts/MYRIADPRO-REGULAR.OTF") format("OpenType");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "MyriadPRO";
-  src: url("../fonts/MYRIADPRO-BOLD.OTF");
-  src: url("../fonts/MYRIADPRO-BOLD.OTF") format("OpenType");
-  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
