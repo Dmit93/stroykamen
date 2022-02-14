@@ -20,7 +20,8 @@ input[type="submit"] {
     border-radius: var(--border-radius);
 }
 
-body {
+body,
+* {
     font-family: 'GothamPro';
     // font-feature-settings: 'pnum' on, 'lnum' on;
 }
