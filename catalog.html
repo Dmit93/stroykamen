@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_catalog.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <div class="background_overlay"></div>
+
+    <header>
+        <div class="header_mobile" style="display:none">
+            <div class="header_mobile--gamburger">
+                <span></span><span></span><span></span>
+            </div>
+            <img class="header_mobile--logo" src="https://www.stroykamen.ru/logo_mob.svg" alt="">
+            <a class="header_bottom__cart" href="">
+                <img src="img/cart_top.png" alt="">
+            </a>
+            <div class="header_mobile--menu">
+                <ul class="fl-align">
+                    <li>Главная</li>
+                    <li>Доставка</li>
+                    <li>Акции</li>
+                    <li>Где купить</li>
+                    <li>Новости</li>
+                    <li>Контакты</li>
+                </ul>
+                <a class="fl-align" href="+73412771795"><img src="img/call.png" alt=""> 77-17-95</a>
+                <p>Время работы Пн-Пт: 8:00-17:00</p>
+                <div class="header__messenger">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+                    </a>
+                    <a href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12.892 13.745s.427.038.656-.247l.448-.563c.216-.28.738-.458 1.249-.174.676.382 1.55.982 2.149 1.541.33.278.407.688.182 1.121l-.002.009c-.232.408-.541.791-.932 1.148l-.009.006c-.44.367-.946.58-1.487.404l-.01-.014c-.972-.275-3.304-1.464-4.79-2.649-2.431-1.918-4.159-5.082-4.637-6.778l-.015-.01c-.176-.543.039-1.049.404-1.488l.007-.008c.357-.391.739-.701 1.148-.932l.009-.002c.432-.225.842-.149 1.121.182.367.379 1.056 1.291 1.54 2.149.284.51.106 1.033-.173 1.248l-.564.448c-.284.23-.247.657-.247.657s.834 3.156 3.953 3.952zm4.907-2.616c-.167 0-.303-.135-.304-.302-.014-1.83-.564-3.288-1.634-4.332-1.072-1.045-2.427-1.581-4.027-1.592-.168-.001-.303-.138-.301-.306.001-.167.136-.301.303-.301h.002c1.762.012 3.258.606 4.447 1.764 1.19 1.162 1.802 2.765 1.817 4.763.001.167-.133.304-.301.306h-.002zm-1.595-.624h-.007c-.168-.004-.301-.143-.297-.31.024-1.038-.273-1.878-.906-2.569-.63-.689-1.495-1.065-2.645-1.149-.167-.013-.293-.158-.281-.325.013-.167.158-.293.325-.281 1.294.095 2.32.548 3.049 1.345.733.8 1.092 1.807 1.065 2.992-.004.165-.139.297-.303.297zm-1.558-.522c-.161 0-.295-.126-.303-.289-.051-1.03-.537-1.534-1.527-1.588-.168-.009-.296-.152-.287-.319.009-.168.151-.296.319-.287 1.308.07 2.034.819 2.101 2.164.009.167-.12.31-.288.318l-.015.001zm6.817 3.469c-.605 4.877-4.172 5.185-4.83 5.396-.28.09-2.882.737-6.152.524 0 0-2.438 2.94-3.199 3.705-.119.119-.258.167-.352.145-.131-.032-.167-.188-.165-.414l.02-4.016v-.001c-4.762-1.323-4.485-6.295-4.431-8.898.054-2.603.543-4.736 1.996-6.17 2.61-2.364 7.987-2.011 7.987-2.011 4.541.02 6.717 1.387 7.222 1.845 1.675 1.434 2.528 4.867 1.904 9.895zm-.652-11.113c-.597-.548-3.007-2.298-8.375-2.322 0 0-6.33-.382-9.416 2.45-1.718 1.718-2.322 4.231-2.386 7.348-.063 3.118-.146 8.958 5.484 10.542l.006.002-.004 2.416s-.035.979.609 1.179c.779.241 1.236-.502 1.981-1.304.408-.44.971-1.086 1.397-1.58 3.851.322 6.812-.417 7.149-.526.777-.253 5.177-.816 5.893-6.657.738-6.022-.358-9.83-2.338-11.548z"></path></svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="header_top">
+                <div class="header__calBuy fl-align"><img src="img/map_adress.png" alt=""> Где купить
+                    <div class="header__calBuy--menu">
+                        <div class="section_contactIndex--officeItem section_contactIndex--1">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_2_b.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_2_b.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_2_b.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                                </div>
+                                <div class="swiper-button-next">
+                                    <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                                </div>
+                            </div>
+                            <div class="section_contactIndex--officeText">
+                                <h3>Офис продаж Ижевского завода кирпича и керамзита</h3>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>Телефон</p>
+                                    <p>
+                                        <a href="tel:+73412771540">77-15-40</a>
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>Адрес</p>
+                                    <p>
+                                        г. Ижевск, ул. О. Кошевого, 2
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>График работы</p>
+                                    <p>
+                                        Пн-Пт: с 8:00 до 17:00<br> Сб-Вс: выходной<br> Без перерыва на обед
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine section_contactIndex--end">
+                                    <a class="section_contactIndex--officeLine__shema" href=""><img src="img/scheme.png" alt=""> Схема проезда</a>
+                                    <a class="section_contactIndex--officeLine__link" href="">Подробнее о шоу-руме</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="section_contactIndex--officeItem section_contactIndex--2">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_3_b.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_3_b.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/phot_3_b.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                                </div>
+                                <div class="swiper-button-next">
+                                    <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                                </div>
+                            </div>
+
+                            <div class="section_contactIndex--officeText">
+                                <h3>ТЦ "Азбука ремонта" (1 этаж, отдел 120 А)</h3>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>Телефон</p>
+                                    <p>
+                                        <a href="tel:+79225002865">+7 (922) 500-28-65</a>
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>Адрес</p>
+                                    <p>
+                                        г. Ижевск, ул. Молодежная, 107 Б
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>График работы</p>
+                                    <p>
+                                        Пн-Пт: с 8:00 до 17:00<br> Сб-Вс: выходной<br> Без перерыва на обед
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine section_contactIndex--end">
+                                    <a class="section_contactIndex--officeLine__shema" href=""><img src="img/scheme.png" alt=""> Схема проезда</a>
+                                    <a class="section_contactIndex--officeLine__link" href="">Подробнее о шоу-руме</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section_contactIndex--officeItem section_contactIndex--3">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/back-f.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/back-f.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="https://www.izkm.ru/sites/all/themes/izkm/img/back-f.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                                </div>
+                                <div class="swiper-button-next">
+                                    <img src="data:image/svg+xml,%3Csvg width='10' height='29' viewBox='0 0 10 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0V27L1 17.4857' stroke='white' stroke-width='2' /%3E%3C/svg%3E%0A">
+                                </div>
+                            </div>
+
+                            <div class="section_contactIndex--officeText">
+                                <h3>Офис продаж завода "Альтаир"</h3>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>Телефон</p>
+                                    <p>
+                                        <a href="tel:+79225002865">+7 (922) 500-28-65</a>
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>Адрес</p>
+                                    <p>
+                                        г. Ижевск, ул. Воткинское шоссе, 31
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine">
+                                    <p>График работы</p>
+                                    <p>
+                                        Пн-Пт: с 8:00 до 17:00<br> Сб-Вс: выходной<br> Без перерыва на обед
+                                    </p>
+                                </div>
+                                <div class="section_contactIndex--officeLine section_contactIndex--end">
+                                    <a class="section_contactIndex--officeLine__shema" href=""><img src="img/scheme.png" alt=""> Схема проезда</a>
+                                    <a class="section_contactIndex--officeLine__link" href="">Подробнее о шоу-руме</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="fl-align" href="+73412771795"><img src="img/call.png" alt=""> 77-17-95</a>
+                <p>Время работы Пн-Пт: 8:00-17:00</p>
+                <div class="header__messenger">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path></svg>
+                    </a>
+                    <a href="">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12.892 13.745s.427.038.656-.247l.448-.563c.216-.28.738-.458 1.249-.174.676.382 1.55.982 2.149 1.541.33.278.407.688.182 1.121l-.002.009c-.232.408-.541.791-.932 1.148l-.009.006c-.44.367-.946.58-1.487.404l-.01-.014c-.972-.275-3.304-1.464-4.79-2.649-2.431-1.918-4.159-5.082-4.637-6.778l-.015-.01c-.176-.543.039-1.049.404-1.488l.007-.008c.357-.391.739-.701 1.148-.932l.009-.002c.432-.225.842-.149 1.121.182.367.379 1.056 1.291 1.54 2.149.284.51.106 1.033-.173 1.248l-.564.448c-.284.23-.247.657-.247.657s.834 3.156 3.953 3.952zm4.907-2.616c-.167 0-.303-.135-.304-.302-.014-1.83-.564-3.288-1.634-4.332-1.072-1.045-2.427-1.581-4.027-1.592-.168-.001-.303-.138-.301-.306.001-.167.136-.301.303-.301h.002c1.762.012 3.258.606 4.447 1.764 1.19 1.162 1.802 2.765 1.817 4.763.001.167-.133.304-.301.306h-.002zm-1.595-.624h-.007c-.168-.004-.301-.143-.297-.31.024-1.038-.273-1.878-.906-2.569-.63-.689-1.495-1.065-2.645-1.149-.167-.013-.293-.158-.281-.325.013-.167.158-.293.325-.281 1.294.095 2.32.548 3.049 1.345.733.8 1.092 1.807 1.065 2.992-.004.165-.139.297-.303.297zm-1.558-.522c-.161 0-.295-.126-.303-.289-.051-1.03-.537-1.534-1.527-1.588-.168-.009-.296-.152-.287-.319.009-.168.151-.296.319-.287 1.308.07 2.034.819 2.101 2.164.009.167-.12.31-.288.318l-.015.001zm6.817 3.469c-.605 4.877-4.172 5.185-4.83 5.396-.28.09-2.882.737-6.152.524 0 0-2.438 2.94-3.199 3.705-.119.119-.258.167-.352.145-.131-.032-.167-.188-.165-.414l.02-4.016v-.001c-4.762-1.323-4.485-6.295-4.431-8.898.054-2.603.543-4.736 1.996-6.17 2.61-2.364 7.987-2.011 7.987-2.011 4.541.02 6.717 1.387 7.222 1.845 1.675 1.434 2.528 4.867 1.904 9.895zm-.652-11.113c-.597-.548-3.007-2.298-8.375-2.322 0 0-6.33-.382-9.416 2.45-1.718 1.718-2.322 4.231-2.386 7.348-.063 3.118-.146 8.958 5.484 10.542l.006.002-.004 2.416s-.035.979.609 1.179c.779.241 1.236-.502 1.981-1.304.408-.44.971-1.086 1.397-1.58 3.851.322 6.812-.417 7.149-.526.777-.253 5.177-.816 5.893-6.657.738-6.022-.358-9.83-2.338-11.548z"></path></svg>
+                    </a>
+                </div>
+                <div class="header__btn">
+                    <button data-zvonok>Заказать звонок</button>
+                    <button data-price>Стать дилером</button>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom overflow">
+            <div class="container fl-align">
+                <img class="header_logo" src="img/logo.svg" alt="">
+                <div class="header_bottom__btnCatalog">
+                    <div>
+                        <span></span><span></span><span></span>
+                    </div>
+                    Каталог
+                    <ul class="header_bottom__menu">
+                        <li>Тротуарная плитка и брусчатка</li>
+                        <li>Бордюры</li>
+                        <li>Декоративные камни</li>
+                    </ul>
+                </div>
+                <p>Завод качественной тротуарной плитки</p>
+                <ul class="fl-align">
+                    <li>Главная</li>
+                    <li>Доставка</li>
+                    <li>Акции</li>
+                    <li>Где купить</li>
+                    <li>Новости</li>
+                    <li>Контакты</li>
+                </ul>
+                <a class="header_bottom__cart" href="">
+                    <img src="img/cart_top.png" alt="">
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- <div class="section_catalog-p">
+        <div class="section_catalog-p__filter">
+            <div class="block_header__menu--esc section_catalog-p__filter--esc">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="section_catalog-p__filter--category">
+                <p class="section_catalog-p__filter--title">Категории</p>
+                <ul class="section_catalog-p__filter--list">
+                    <li>Тротуарная плитка</li>
+                    <li>Бордюры</li>
+                    <li>Премиум продукция</li>
+                </ul>
+            </div>
+            <div class="section_catalog-p__filter--select">
+                <div class="section_catalog-p__filter--selectTitle">Сначала популярное</div>
+                <ul>
+                    <li>Сначала популярное</li>
+                    <li>Сначала дешевые</li>
+                    <li>Сначала дорогие</li>
+                </ul>
+            </div>
+            <div class="section_catalog-p__filter--colors">
+                <p class="section_catalog-p__filter--colorTitle">Цвет</p>
+                <p class="section_catalog-p__filter--colorName"><span style="background:#cecece"></span>Белый</p>
+                <p class="section_catalog-p__filter--colorName"><span style="background:yellow"></span>Желтый</p>
+                <p class="section_catalog-p__filter--colorName"><span style="background:#bf6b1d"></span>Какао</p>
+                <p class="section_catalog-p__filter--colorName"><span style="background:#bf6b1d"></span>Капучино</p>
+                <p class="section_catalog-p__filter--colorName"><span style="background:#df2828"></span>Кирпичный</p>
+            </div>
+        </div>
+        <div class="section_catalog-p__container">
+            <h1>Каталог</h1>
+            <div class="section_catalog-p__content">
+                <div class="section_catalog-p__fl">
+                    <h2>Тротуарная плитка</h2>
+                    <div class="section_catalog-p__content--pagination">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                        </ul>
+                        <div class="section_catalog-p__content--nav">
+                            <a href="">></a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="section_catalog-p__btnFilter">Фильтр <img src="img/filter.png" alt=""></button>
+
+                <div class="section_catalog-p__content--elements">
+                    <div class="section_catalog-p__content--element">
+                        <div class="section_catalog-p__content--img">
+                            <img src="https://www.stroykamen.ru/upload/iblock/a93/chastnyy-dom-3.jpg" alt="">
+                        </div>
+                        <div class="section_catalog-p__content--text">
+                            <h3>Тротуарная плитка - Мультиформат</h3>
+                            <div class="section_catalog-p__content--price">
+                                <p>695 руб/м2</p>
+                                <a href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_catalog-p__content--element">
+                        <div class="section_catalog-p__content--img">
+                            <img src="https://www.stroykamen.ru/upload/iblock/a93/chastnyy-dom-3.jpg" alt="">
+                        </div>
+                        <div class="section_catalog-p__content--text">
+                            <h3>Тротуарная плитка - Мультиформат</h3>
+                            <div class="section_catalog-p__content--price">
+                                <p>695 руб/м2</p>
+                                <a href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_catalog-p__content--element">
+                        <div class="section_catalog-p__content--img">
+                            <img src="https://www.stroykamen.ru/upload/iblock/a93/chastnyy-dom-3.jpg" alt="">
+                        </div>
+                        <div class="section_catalog-p__content--text">
+                            <h3>Тротуарная плитка - Мультиформат</h3>
+                            <div class="section_catalog-p__content--price">
+                                <p>695 руб/м2</p>
+                                <a href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_catalog-p__content--element">
+                        <div class="section_catalog-p__content--img">
+                            <img src="https://www.stroykamen.ru/upload/iblock/a93/chastnyy-dom-3.jpg" alt="">
+                        </div>
+                        <div class="section_catalog-p__content--text">
+                            <h3>Тротуарная плитка - Мультиформат</h3>
+                            <div class="section_catalog-p__content--price">
+                                <p>695 руб/м2</p>
+                                <a href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_catalog-p__content--element">
+                        <div class="section_catalog-p__content--img">
+                            <img src="https://www.stroykamen.ru/upload/iblock/a93/chastnyy-dom-3.jpg" alt="">
+                        </div>
+                        <div class="section_catalog-p__content--text">
+                            <h3>Тротуарная плитка - Мультиформат</h3>
+                            <div class="section_catalog-p__content--price">
+                                <p>695 руб/м2</p>
+                                <a href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section_catalog-p__content--element">
+                        <div class="section_catalog-p__content--img">
+                            <img src="https://www.stroykamen.ru/upload/iblock/a93/chastnyy-dom-3.jpg" alt="">
+                        </div>
+                        <div class="section_catalog-p__content--text">
+                            <h3>Тротуарная плитка - Мультиформат</h3>
+                            <div class="section_catalog-p__content--price">
+                                <p>695 руб/м2</p>
+                                <a href="">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="container section_catalog-p">
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li>Тротуарная плитка</li>
+            </ul>
+        </div>
+        <h1>Тротуарная плитка</h1>
+        <div class="section_catalog__items">
+            <div class="section_catalog__item">
+                <img src="img/catalog-item-1.jpg" alt="">
+                <p>Кирпичик</p>
+            </div>
+            <div class="section_catalog__item">
+                <img src="img/catalog-item-1.jpg" alt="">
+                <p>Квадрат</p>
+            </div>
+            <div class="section_catalog__item">
+                <img src="img/catalog-item-1.jpg" alt="">
+                <p>Старый город </p>
+            </div>
+            <div class="section_catalog__item">
+                <img src="img/catalog-item-1.jpg" alt="">
+                <p>Новый город</p>
+            </div>
+            <div class="section_catalog__item">
+                <img src="img/catalog-item-1.jpg" alt="">
+                <p>Антик</p>
+            </div>
+            <div class="section_catalog__item">
+                <img src="img/catalog-item-1.jpg" alt="">
+                <p>Плита 600*300
+                </p>
+            </div>
+            <div class="section_catalog__item">
+                <img src="img/catalog-item-1.jpg" alt="">
+                <p>Крупноформатные тротуарные плиты</p>
+            </div>
+            <div class="section_catalog__item">
+                <img src="img/catalog-item-1.jpg" alt="">
+                <p>Тротуарная плиты "Квадрат"</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container content_catalog">
+        <h2> Выбираем между вибролитой и вибропрессованной тротуарной плиткой</h2>
+        <p> Сегодня тротуарной плиткой никого в России не удивишь. Не то, что в середине 90-х годов прошлого века, когда этот строительный материал стал настоящим откровением для россиян. Тогда на нее был ажиотажный спрос, и покупатели не особо вникали в
+            технологию производства плитки, разбирая с колес то, что есть.
+        </p>
+        <p>
+            Но и сегодня спрос на тротуарную плитку очень высок. Однако покупатель стал более грамотным, а рынок зрелым. Соответственно, при приобретении плитки человек все больше задумывается над тем, по какой технологии она сделана, как долго прослужит и так далее.
+            И здесь он неизбежно оказывается перед выбором: покупать вибролитую тротуарную плитку или вибропрессованную. О различиях плитки, выполненной в соответствии с данными технологиями, мы сейчас расскажем, а помогут нам в этом специалисты завода
+            «СтройКамень».
+        </p>
+        <h2>Вибролитье</h2>
+        <p> При вибролитье бетонную смесь заливают в форму, сделанную из пластика, ставят форму на вибростол, поверхность которого находится в постоянной вибрации. Когда завершается процесс утрамбовки смеси, форму снимают со стола и выдерживают в тёплом месте
+            на протяжении не менее 12 часов. После чего производство тротуарной плитки закончено, и ее можно извлекать из формы.
+        </p>
+        <p>
+            У данной технологии есть ряд плюсов. Это, во-первых, гладкая поверхность плитки. Во-вторых, этот метод позволяет получать плитку практически любой формы и с различной фактурой поверхности. В-третьих, вибролитая тротуарная плитка легко окрашивается в различные
+            цвета. Именно вибролитая плитка и стала хитом 90-х годов, во многом благодаря простоте производственного процесса. Но сегодня она сдает свои позиции, а все потому, что, зачастую, ее достоинства сводятся на нет минусами. Особенно сильно они
+            проявляются в суровых российских климатических условиях.
+        </p>
+        <p>
+            Главный минус вибролитой тротуарной плитки – ее невысокая прочность. Даже при точном соблюдении рекомендуемого технологического процесса и пропорций, такая плитка с трудом укладывалась в требования, предъявляемые действующим ГОСТом в части истираемости
+            бетона. Так, у литой тротуарной плитки показатель истираемости практически не опускаются ниже 1.4г/кв. см., хотя истираемость плитки, используемой даже в местах с малой интенсивностью движения по требованиям ГОСТ 13015.0-83должна быть не выше
+            0.9г/кв. см.
+        </p>
+        <p>
+            Еще одной «ахиллесовой пятой» вибролитой плитки является ее низкая морозостойкость. В соответствии с ГОСТ 17608-91, морозостойкость должна быть как минимум F-100 (южные районы). Для центральной России и северных районов этот показатель должен быть выше
+            в полтора-два раза. Вибролитая плитка редко соответствует даже показателю F-100, как следствие – уже через пару лет она покрывается трещинами и крошится, хотя тротуарная плитка должна служить пару десятков лет.
+        </p>
+        <p>
+            Кроме того, производство тротуарной плитки методом вибролитья довольно долгий процесс, и говорить о действительно массовом производстве здесь нельзя. Судите сами, прежде чем извлечь готовую плитку из формы, смесь должна простоять и высохнуть в течение
+            долгого времени.
+        </p>
+
+        <p>
+            При этом объемы производства ограничены числом форм для плитки, и чтобы увеличить количество выпускаемых изделий, придется раскошелиться на новые формы, а это весьма затратно. Ну и не стоит забывать, что в основе производства тротуарной плитки методом
+            вибролитья лежит ручной труд, автоматизация здесь практически невозможна. Все это ведет к тому, что себестоимость вибролитой тротуарной плитки достаточно высока, и снизить ее очень сложно.
+        </p>
+        <h2> Вибропрессование</h2>
+        <p> В случае с производством тротуарной плитки методом вибропрессования, бетонную смесь укладывают в пресс-форму, располагающуюся на станине оборудования тротуарной плитки (она находится в непрерывной вибрации). На эту смесь сверху оказывает давление
+            пуансон (точно входящая в пресс-форму деталь, она также находится в постоянной вибрации), процесс изготовления тротуарной плитки продолжается до полного уплотнения смеси.
+        </p>
+        <p>
+            Давление при этом составляет 30-35 атмосфер. Для получения готового продукта поднимают пуансон и пресс-форму, а на поддоне остаётся готовая плитка. В отличие от литой, прессованная плитка не может похвастаться таким разнообразием форм, цветов и гладкой
+            поверхностью. Зато у нее есть другие достоинства, которые делают вибропрессованную тротуарную плитку явным фаворитом.
+        </p>
+
+        <p>
+            Во-первых, это прочность. Вибропрессованная плитка, в отличие от литой, служит десятилетиями. Подобных показателей удалось достичь благодаря тому, что вибропрессованная плитка соответствует всем нормативам по водопоглощению и отличается высокими характеристиками
+            морозостойкости (F-200, F-300 и более). Одним словом, она соответствует всем требованиям ГОСТа 17608-91
+        </p>
+
+        <p>
+            Во-вторых, производительность предприятия, выпускающего такую плитку, очень высока. Так, снимать готовые изделия с технологических поддонов можно через 5-8 часов после производства. После чего поддоны отправляются на станок, и производственный цикл повторяется
+            вновь.
+        </p>
+        <p>
+            В-третьих, технологический процесс производства тротуарной плитки методом вибропрессования хорошо поддается автоматизации, а значит, влияние человеческого фактора на качество продукта можно свести к минимуму. В-четвертых, благодаря малой доле ручного
+            труда и короткому производственному циклу, себестоимость вибропрессованной тротуарной плитки ниже, чем у вибролитой.
+        </p>
+        <p>
+            В-пятых, вибропрессование экономнее вибролитья. Так, при производстве прессованной плитки существенно ниже расход цемента, пластификатора и модифицирующих добавок. В связке с высокой производительностью и возможностью автоматизации, все это позволяет
+            снизить себестоимость продукции.
+
+        </p>
+        <h2>
+            Очевидный выбор</h2>
+        <p> Итак, что получается? А получается, что вибропрессованная плитка выглядит предпочтительнее. Да, здесь меньше разнообразия, цветов, да и зеркальной поверхностью она похвастаться не может, однако долговечность, качество и прочность делают свое дело.
+            Ведь люди, считающие деньги, скорее выберут тротуарную плитку, которая запросто прослужит не один десяток лет, чем ту, которую придется менять через 3-4 года.
+        </p>
+        <p>
+            Очевидно, что производство вибропрессованной плитки в скором времени займет основную нишу. На выпуск вибролитой плитки придется лишь небольшая доля рынка для эстетов, предпочитающих не долговечность изделий, а их внешний вид.
+        </p>
+    </div>
+
+    <div class="form_popap">
+        <div class="container">
+            <div class="left">
+                <div class="login">Связаться с нами</div>
+                <div class="eula">В ближайшее время наш менеджер Вам перезвонит</div>
+            </div>
+            <div class="right">
+                <div class="form-esc">
+                    <span></span>
+                    <span></span>
+                </div>
+                <svg viewBox="0 0 320 300">
+              <defs>
+                <linearGradient
+                                inkscape:collect="always"
+                                id="linearGradient"
+                                x1="13"
+                                y1="193.49992"
+                                x2="307"
+                                y2="393.49992"
+                                gradientUnits="userSpaceOnUse">
+                  <stop
+                        style="stop-color:var(--color-green);"
+                        offset="0"
+                        id="stop876" />
+                  <stop
+                        style="stop-color:var(--color-black);"
+                        offset="1"
+                        id="stop878" />
+                </linearGradient>
+              </defs>
+              <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
+            </svg>
+                <div class="form">
+                    <label for="name_form">Ваше имя</label>
+                    <input type="text" id="name_form">
+                    <label for="phone_form">Номер телефона</label>
+                    <input type="phone" id="phone_form">
+
+                    <input type="submit" id="submit" value="Отправить">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="price_popap">
+
+        <div class="block_header__menu--esc section_catalog-p__filter--esc">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class='price_popap__container'>
+            <div class='login_title'>
+                <span>Хотите получить полный прайс-лист по продукции?</span>
+                <p>Отправьте заявку через форму ниже с указанием Ваших контактных данных.</p>
+            </div>
+            <div class='login_fields'>
+                <div class='login_fields__user'>
+                    <div class='icon'>
+                        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+                    </div>
+                    <input placeholder='Имя' type='text'>
+                    <div class='validation'>
+                        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+                    </div>
+                    </input>
+                </div>
+                <div class='login_fields__password'>
+                    <div class='icon'>
+                        <img src='img/phone-call.png'>
+                    </div>
+                    <input placeholder='Телефон' type='text'>
+                    <div class='validation'>
+                        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+                    </div>
+                </div>
+                <div class='login_fields__password'>
+                    <div class='icon'>
+                        <img src='img/mail.png'>
+                    </div>
+                    <input placeholder='Email' type='text'>
+                    <div class='validation'>
+                        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+                    </div>
+                </div>
+                <div class='login_fields__submit'>
+                    <input type='submit' value='Заказать прайс-лист'>
+                </div>
+            </div>
+            <div class='success'>
+                <h2>Заявка отправлена</h2>
+            </div>
+        </div>
+        <div class='authent'>
+            <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/puff.svg'>
+            <p>Загрузка...</p>
+        </div>
+    </div>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Gudea:400,700);
+        .price_popap {
+            -webkit-perspective: 800px;
+            display: none;
+            z-index: 9999;
+            perspective: 800px;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Gudea', sans-serif;
+            background: var(--color-green);
+            /* Old browsers */
+            /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, var(--color-green)), color-stop(100%, #bb6dec));
+            /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(-45deg, var(--color-green) 0%, #bb6dec 100%);
+            /* Chrome10+,Safari5.1+ */
+            /* Opera 11.10+ */
+            /* IE10+ */
+            background: -webkit-linear-gradient(315deg, var(--color-green) 0%, #bb6dec 100%);
+            background: linear-gradient(135deg, var(--color-green) 0%, #c7abd8 100%);
+            /* W3C */
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='var(--color-green) ', endColorstr='#bb6dec', GradientType=1);
+            /* IE6-9 fallback on horizontal gradient */
+        }
+        
+        .price_popap .section_catalog-p__filter--esc {
+            cursor: pointer;
+            display: block
+        }
+        
+        body ::-webkit-input-placeholder {
+            color: #4E546D;
+        }
+        
+        .price_popap .authent {
+            display: none;
+            background: #35394a;
+            /* Old browsers */
+            /* FF3.6+ */
+            background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #35394a), color-stop(100%, #1f222e));
+            /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+            /* Chrome10+,Safari5.1+ */
+            /* Opera 11.10+ */
+            /* IE10+ */
+            background: linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+            /* W3C */
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#35394a', endColorstr='#1f222e', GradientType=1);
+            /* IE6-9 fallback on horizontal gradient */
+            position: absolute;
+            left: 0;
+            right: 90px;
+            margin: auto;
+            width: 220px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            padding: 20px 0;
+            top: 200px;
+            bottom: 0;
+            height: max-content;
+            opacity: 0;
+        }
+        
+        .price_popap .authent img {
+            margin-bottom: 15px;
+        }
+        
+        .price_popap {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .price_popap .authent p {
+            text-align: center;
+            color: white;
+        }
+        
+        .price_popap .success {
+            display: none;
+            color: #d5d8e2;
+        }
+        
+        .price_popap .success h2 {
+            text-align: center;
+        }
+        
+        .price_popap .success p {
+            font-size: 14px;
+        }
+        
+        .price_popap p {
+            color: #5B5E6F;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .price_popap .testtwo {
+            left: -320px !important;
+        }
+        
+        .price_popap .test {
+            box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+            pointer-events: none;
+            top: -100px !important;
+            -webkit-transform: rotateX(70deg) scale(0.8) !important;
+            transform: rotateX(70deg) scale(0.8) !important;
+            opacity: .6 !important;
+            -webkit-filter: blur(1px);
+            filter: blur(1px);
+        }
+        
+        .price_popap .price_popap__container {
+            opacity: 1;
+            top: 20px;
+            -webkit-transition-timing-function: cubic-bezier(0.68, -0.25, 0.265, 0.85);
+            -webkit-transition-property: opacity, box-shadow, top, left, -webkit-transform;
+            transition-property: opacity, box-shadow, top, left, -webkit-transform;
+            transition-property: transform, opacity, box-shadow, top, left;
+            transition-property: transform, opacity, box-shadow, top, left, -webkit-transform;
+            -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+            -webkit-transform-origin: 161px 100%;
+            transform-origin: 161px 100%;
+            -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            position: relative;
+            width: 500px;
+            height: max-content;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            padding: 40px 40px 40px 40px;
+            background: #35394a;
+            /* Old browsers */
+            /* FF3.6+ */
+            background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #35394a), color-stop(100%, #1f222e));
+            /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+            /* Chrome10+,Safari5.1+ */
+            /* Opera 11.10+ */
+            /* IE10+ */
+            background: linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+            /* W3C */
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#35394a', endColorstr='#1f222e', GradientType=1);
+            /* IE6-9 fallback on horizontal gradient */
+        }
+        
+        .price_popap .price_popap__container .validation {
+            position: absolute;
+            z-index: 1;
+            right: 10px;
+            top: 6px;
+            opacity: 0;
+        }
+        
+        .price_popap .price_popap__container .disclaimer {
+            position: absolute;
+            bottom: 20px;
+            left: 35px;
+            width: 250px;
+        }
+        
+        .price_popap .login_title {
+            color: #afb1be;
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+        
+        .price_popap .login_title span {
+            line-height: 1;
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        .price_popap .login_fields {
+            height: 208px;
+            width: 100%
+            /* position: absolute;
+            left: 0; */
+        }
+        
+        .price_popap .login_fields .icon {
+            position: absolute;
+            z-index: 1;
+            left: 36px;
+            top: 8px;
+            opacity: .5;
+        }
+        
+        .price_popap .login_fields .icon img {
+            width: 12px
+        }
+        
+        .price_popap .login_fields input[type='password'] {
+            color: #DC6180 !important;
+        }
+        
+        .price_popap .login_fields input[type='text'],
+        .price_popap .login_fields input[type='password'] {
+            color: #afb1be;
+            width: 100%;
+            margin-top: -2px;
+            background: #32364a;
+            left: 0;
+            padding: 10px 65px;
+            border-top: 2px solid #393d52;
+            border-bottom: 2px solid #868ba8;
+            border-right: none;
+            border-left: none;
+            outline: none;
+            font-family: 'Gudea', sans-serif;
+            box-shadow: none;
+        }
+        
+        body .login_fields__user,
+        body .login_fields__password {
+            position: relative;
+        }
+        
+        body .login_fields__submit {
+            position: relative;
+            top: 35px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            right: 0;
+            margin: auto;
+        }
+        
+        body .login_fields__submit .forgot {
+            float: right;
+            font-size: 10px;
+            margin-top: 11px;
+            text-decoration: underline;
+        }
+        
+        body .login_fields__submit .forgot a {
+            color: #606479;
+        }
+        
+        body .login_fields__submit input {
+            border-radius: 50px;
+            background: transparent;
+            padding: 10px 50px;
+            border: 2px solid #45a33873;
+            color: #867e80;
+            text-transform: uppercase;
+            font-size: 11px;
+            -webkit-transition-property: background, color;
+            transition-property: background, color;
+            -webkit-transition-duration: .2s;
+            transition-duration: .2s;
+        }
+        
+        body .login_fields__submit input:focus {
+            box-shadow: none;
+            outline: none;
+        }
+        
+        body .login_fields__submit input:hover {
+            color: white;
+            background: var(--color-green);
+            cursor: pointer;
+            -webkit-transition-property: background, color;
+            transition-property: background, color;
+            -webkit-transition-duration: .2s;
+            transition-duration: .2s;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        document.querySelector('.price_popap .section_catalog-p__filter--esc').addEventListener('click', function(e) {
+            document.querySelector('.price_popap').style.display = 'none'
+        });
+        document.querySelector('[data-price]').addEventListener('click', function(e) {
+            document.querySelector('.price_popap').style.display = 'block'
+        });
+        $('.price_popap__container input[type="submit"]').click(function() {
+            $('.price_popap__container').addClass('test')
+            setTimeout(function() {
+                $('.price_popap__container').addClass('testtwo')
+            }, 300);
+            setTimeout(function() {
+                $(".authent").show().animate({
+                    right: -320
+                }, {
+                    //  easing: 'easeOutQuint',
+                    duration: 600,
+                    queue: false
+                });
+                $(".authent").animate({
+                    opacity: 1
+                }, {
+                    duration: 200,
+                    queue: false
+                }).addClass('visible');
+            }, 500);
+            setTimeout(function() {
+                $(".authent").show().animate({
+                    right: 90
+                }, {
+                    //  easing: 'easeOutQuint',
+                    duration: 600,
+                    queue: false
+                });
+                $(".authent").animate({
+                    opacity: 0
+                }, {
+                    duration: 200,
+                    queue: false
+                }).addClass('visible');
+                $('.price_popap__container').removeClass('testtwo')
+            }, 2500);
+            setTimeout(function() {
+                $('.price_popap__container').removeClass('test')
+                $('.price_popap__container div').fadeOut(123);
+            }, 2800);
+            setTimeout(function() {
+                $('.success').fadeIn();
+            }, 3200);
+        });
+
+        $('.price_popap__container input[type="text"],input[type="password"]').focus(function() {
+            $(this).prev().animate({
+                'opacity': '1'
+            }, 200)
+
+
+        });
+        $('.price_popap__container input[type="text"],input[type="password"]').blur(function() {
+            $(this).prev().animate({
+                'opacity': '.5'
+            }, 200)
+        });
+
+        $('.price_popap__container input[type="text"],input[type="password"]').keyup(function() {
+            if (!$(this).val() == '') {
+                $(this).next().animate({
+                    'opacity': '1',
+                    'right': '30'
+                }, 200)
+            } else {
+                $(this).next().animate({
+                    'opacity': '0',
+                    'right': '20'
+                }, 200)
+            }
+        });
+
+        var open = 0;
+        $('.tab').click(function() {
+            $(this).fadeOut(200, function() {
+                $(this).parent().animate({
+                    'left': '0'
+                })
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer__logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="footer__adress">
+                <div class="footer__adress--box footer__adress--phone fl-align">
+                    <img src="img/phone-call.png" alt="">
+                    <a href="tel:+73412771795">77-17-95</a>
+                </div>
+                <button data-zvonok>Обратный звонок</button>
+                <div class="footer__adress--box fl-align">
+                    <img src="img/mail.png" alt="">
+                    <a href="mailto:zavod_ecoblock@mail.ru">zavod_ecoblock@mail.ru</a>
+                </div>
+                <div class="footer__adress--box">
+                    <img src="img/adress-white.png" alt="">
+                    <p>г. Ижевск, ул. Олега Кошевого, 2</p>
+                </div>
+            </div>
+            <div class="footer__menu">
+                <ul>
+                    <li class="footer__title">О компании</li>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Гарантия</a></li>
+                    <li><a href="">Реквизиты</a></li>
+                    <li><a href="">Вакансии</a></li>
+                </ul>
+                <ul>
+                    <li class="footer__title">Продукция</li>
+                    <li><a href="">Тротуарная плитка и брусчатка</a></li>
+                    <li><a href="">Стеновые блоки</a></li>
+                    <li><a href="">Декоративные камни</a></li>
+                    <li><a href="">Бордюры</a></li>
+                    <li><a href="">Вентиляционные блоки</a></li>
+                    <li><a href="">Ограничитель парковки</a></li>
+                    <li><a href="">Укладка брусчатки</a></li>
+                </ul>
+                <ul>
+                    <li class="footer__title">Покупателем</li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Вопрос-ответ</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Статьи</a></li>
+                    <li><a href="">Благоустройство,укладка брусчатки</a></li>
+                </ul>
+
+            </div>
+            <div class="footer__vidget">
+                <div class="footer__vidget--mess">
+                    <p>Мы в соцсетях</p>
+                    <ul>
+                        <li>
+                            <img src="img/vk.png" alt="">
+                        </li>
+                        <li>
+                            <img src="img/instagram.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <a href="">Обратная связь</a>
+                <a href="">Письмо директору</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.form-esc').forEach(i => {
+            i.addEventListener('click', () => {
+                i.closest('.form_popap').style.display = 'none';
+            });
+        });
+
+        document.querySelector('.section_catalog-p__filter--esc').addEventListener('click', () => {
+            document.querySelector('.section_catalog-p__filter').classList.remove('active');
+        });
+
+        document.querySelectorAll('[data-zvonok]').forEach(i => {
+            i.addEventListener('click', () => {
+                document.querySelector('.form_popap').style.display = 'flex';
+            });
+        });
+
+
+        var current = null;
+        document.querySelector('#name_form').addEventListener('focus', function(e) {
+            if (current) current.pause();
+            current = anime({
+                targets: 'path',
+                strokeDashoffset: {
+                    value: 0,
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                },
+                strokeDasharray: {
+                    value: '240 1386',
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                }
+            });
+        });
+        document.querySelector('#phone_form').addEventListener('focus', function(e) {
+            if (current) current.pause();
+            current = anime({
+                targets: 'path',
+                strokeDashoffset: {
+                    value: -336,
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                },
+                strokeDasharray: {
+                    value: '240 1386',
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                }
+            });
+        });
+
+        document.querySelector('#submit').addEventListener('focus', function(e) {
+            if (current) current.pause();
+            current = anime({
+                targets: 'path',
+                strokeDashoffset: {
+                    value: -730,
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                },
+                strokeDasharray: {
+                    value: '530 1386',
+                    duration: 700,
+                    easing: 'easeOutQuart'
+                }
+            });
+        });
+    </script>
+
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        document.querySelector('.header_logo').classList.add('active');
+
+
+        document.querySelector('.section_catalog-p__filter--selectTitle').addEventListener('click', function(e) {
+            this.nextElementSibling.classList.add('active');
+        });
+        document.querySelectorAll('.section_catalog-p__filter--select li').forEach(i => {
+            i.addEventListener('click', function(e) {
+                document.querySelector('.section_catalog-p__filter--selectTitle').innerText = this.innerText;
+                document.querySelector('.section_catalog-p__filter--select ul').classList.remove('active');
+            });
+        });
+        document.querySelector('.section_catalog-p__btnFilter').addEventListener('click', () => {
+            document.querySelector('.section_catalog-p__filter').classList.add('active');
+        });
+
+        document.querySelectorAll('.tabs .tab').forEach((i, ind) => {
+            i.addEventListener('click', (e) => {
+                document.querySelectorAll('.tabs_box__element--block').forEach((el, index) => {
+                    el.classList.remove('active')
+                    if (ind === index) {
+                        el.classList.add('active')
+                    }
+                    if (ind === 0) {
+                        document.querySelector('.tabs_box__element--map').style.display = 'block'
+                    } else {
+                        document.querySelector('.tabs_box__element--map').style.display = 'none'
+                    }
+                });
+            });
+        });
+
+
+
+
+
+
+
+        // document.querySelector('#menu-toggle').addEventListener('click', function(e) {
+        //     document.querySelector('.block_header__menu').classList.add('active');
+        // });
+        // document.querySelector('[data-menu]').addEventListener('click', function(e) {
+        //     document.querySelector('.block_header__menu').classList.remove('active');
+        // });
+        // document.querySelector('.btn-6').addEventListener('mouseenter', function(e) {
+        //     let relX = e.layerX,
+        //         relY = e.layerY;
+        //     this.querySelector('span').style.cssText = `
+        //         top: ${relY}px;
+        //         left: ${relX}px;
+        //     `;
+        // });
+    </script>
+
+
+</body>
+
+</html>
